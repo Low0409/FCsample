@@ -1,0 +1,265 @@
+main {
+    text-align: center;
+    margin: auto;
+}
+
+hr {
+    border: 1px solid transparent;
+}
+
+.heading-1 {
+    border-bottom: solid 3px black;
+}
+
+.top-heading {
+    color: red;
+    font-size: 37px;
+}
+
+.top-banner1 {
+    width: 100%;
+    text-align: center;
+}
+
+.top-banner2 {
+    width: 100%;
+    text-align: center;
+}
+
+.detail {
+    display: inline-block;
+    padding-top: 11px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 36px;
+    margin: 0px;
+    background-color: #214cdb;
+    background-image: none;
+    background-size: contain;
+    color: #faf2f2;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #111930;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: none;
+    -webkit-appearance: none;
+    line-height: 1.6;
+    position: relative;
+    text-align: left;
+}
+
+.detail:hover {
+    background-color: #fff;
+    color: #424242;
+}
+
+.detail svg {
+    width: 29px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    stroke: #faf2f2;
+    stroke-width: 3px;
+    right: 24px;
+}
+
+.detail:hover svg {
+    stroke: #424242;
+}
+
+.heading-1 {
+    color: red;
+    text-align: center;
+}
+
+
+/* お問合せdiv */
+
+.contact {
+    background-color: rgb(152, 213, 253);
+    height: 300px;
+    width: 50%;
+    padding-top: 5px;
+    border-radius: 33px;
+}
+
+
+/* お問合せdiv */
+
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* お問合せｈ２ */
+
+.text-contact {
+    font-size: large;
+}
+
+
+/* 資料請求・お問い合わせボタン */
+
+.apply {
+    display: inline-block;
+    padding-top: 11px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 36px;
+    margin: 0px;
+    background-color: #e61c1c;
+    background-image: none;
+    background-size: contain;
+    color: #ffffff;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #d91616;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: none;
+    -webkit-appearance: none;
+    line-height: 1.6;
+    position: relative;
+    text-align: left;
+    margin-bottom: 15px;
+    width: 30%;
+}
+
+.apply:hover {
+    background-color: #fff;
+    color: #424242;
+}
+
+.apply svg {
+    width: 29px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    stroke: #ffffff;
+    stroke-width: 3px;
+    right: 24px;
+}
+
+.apply:hover svg {
+    stroke: #424242;
+}
+
+
+/* 加盟店に応募ボタン */
+
+.apply-2 {
+    display: inline-block;
+    padding-top: 11px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 36px;
+    margin: 0px;
+    background-color: #54d92b;
+    background-image: none;
+    background-size: contain;
+    color: #2e2727;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #39c47f;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: none;
+    -webkit-appearance: none;
+    line-height: 1.6;
+    position: relative;
+    text-align: left;
+    width: 30%;
+}
+
+.apply-2:hover {
+    background-color: #39c47f;
+    color: #fff;
+}
+
+.apply-2 svg {
+    width: 29px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    stroke: #2e2727;
+    stroke-width: 3px;
+    right: 24px;
+}
+
+.apply-2:hover svg {
+    stroke: #fff;
+}
+
+.li-text {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1.4em;
+    text-indent: -1.4em;
+}
+
+#flowdiv {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.flow {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 2rem 1.5rem 120px;
+    border: 2px solid #000;
+    height: 20px;
+    width: 40%;
+    text-align: center;
+    color: rgb(236, 236, 236);
+    background-color: rgb(56, 56, 77);
+}
+
+
+/* 右の斜め背景  */
+
+.flow:before {
+    position: absolute;
+    top: -150%;
+    left: -100px;
+    width: 220px;
+    height: 300%;
+    content: '';
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    background: rgb(48, 13, 175);
+}
+
+
+/* 右の数字  */
+
+.flow span {
+    font-size: 40px;
+    font-size: 3.0rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-top: 3px;
+    padding-left: 16px;
+    color: #fff;
+}
