@@ -7,21 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js"></script>
-
+    <!-- 追加 -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="ress.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- 追加 -->
+    <link rel="stylesheet" href="slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="slick.css" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+$(function() {
+    $('.slide').each(function() {
+      // スライド（画像）の数を取得
+      var $slides = $(this).find('img'),
+          slideNum = $slides.length,
+          currentIdx = 0; // 何番目か
+    
+      // 最初の画像をフェードイン
+      $(".slide img").eq(currentIdx).fadeIn();
+    
+      // 3秒後に次のスライドを表示
+      setTimeout(dispNextSlide, 3000);
+    
+      // 次のスライドを表示するメソッド
+      function dispNextSlide() {
+        var nextIdx = currentIdx + 1;
+    
+        // 最後のスライドの場合ははじめに戻る
+        if (nextIdx > (slideNum - 1)) {
+          nextIdx = 0
+        }
+    
+        // 現在のスライドをフェードアウト
+        $(".slide img").eq(currentIdx).fadeOut();
+    
+        // 次のスライドをフェードイン
+        $(".slide img").eq(nextIdx).fadeIn();
+    
+        // インデックスを更新
+        currentIdx = nextIdx;
+      }
+    });
+   });
+    </script>
 </head>
 
+
+<script>
+    $(".single-item").slick({
+  accessibility: true,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  dots: true,
+  fade: true,
+});
+</script>
 <body>
     <header>
-
+        共通ヘッダー
     </header>
+    <div class="nav-wrap">共通nav-wrap</div>
+    <div id="page-index">共通page-index</div>
     <main>
+        <div class="bg_test">
+            <div class="bg_test-text">
+                <div class="bg_text">
+                    <p class="top_banner_text1">フランチャイズオーナー様</p>
+                    <p class="top_banner_text3">募集!!</p>
+                </div>
+            </div>
+        </div>
+        <!-- スライドショー -->
+        <div class="slide">
+            <!--画像を用意-->
+            <img src="./image/franchise/slide1.jpg" width="720" height="460"/>
+            <img src="./image/franchise/slide2.jpg" width="720" height="460"/>
+       
+          </div>
+        <!-- スライドショー -->
+        <img class="slide_show"src="./image/franchise/slide1.jpg" alt="">
         <div class="top-banner1">
-            <img src="img/top.png" alt="">
+            <img src="image/franchise/top.png" alt="">
         </div>
         <!-- <h1 class="top-heading">未経験でも始められるフランチャイズです!</h1> -->
         <div class="top-banner2">
-            <img src="img/machine.png" alt="">
+            <!-- <img src="img/machine.png" alt=""> -->
         </div>
         <a class="detail">
             詳細はコチラ
@@ -32,11 +104,11 @@
         </a>
         <h2 class="heading-1">加盟店様増加中</h2>
 
-        <img src="img/FCextending.jpg" alt="">
+        <img src="image/franchise/FCextending.jpg" alt="">
         <p>過去何年で--増加しています</p>
         <h2 class="heading-1">最新マシンをスペースに合わせて</h2>
 
-        <img src="img/machine.jpg" alt="">
+        <img src="image/franchise/machine.jpg" alt="">
         <p>過去何年で--増加しています</p>
 
 
