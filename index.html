@@ -10,60 +10,62 @@
     <!-- 追加 -->
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="ress.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700&display=swap&subset=japanese"
+        rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- 追加 -->
     <link rel="stylesheet" href="slick-theme.css" type="text/css">
     <link rel="stylesheet" href="slick.css" type="text/css">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/css/6-1-6.css">
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
+    <!-- SwiperCDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- SwiperCDN -->
     <script>
-$(function() {
-    $('.slide').each(function() {
-      // スライド（画像）の数を取得
-      var $slides = $(this).find('img'),
-          slideNum = $slides.length,
-          currentIdx = 0; // 何番目か
-    
-      // 最初の画像をフェードイン
-      $(".slide img").eq(currentIdx).fadeIn();
-    
-      // 3秒後に次のスライドを表示
-      setTimeout(dispNextSlide, 3000);
-    
-      // 次のスライドを表示するメソッド
-      function dispNextSlide() {
-        var nextIdx = currentIdx + 1;
-    
-        // 最後のスライドの場合ははじめに戻る
-        if (nextIdx > (slideNum - 1)) {
-          nextIdx = 0
-        }
-    
-        // 現在のスライドをフェードアウト
-        $(".slide img").eq(currentIdx).fadeOut();
-    
-        // 次のスライドをフェードイン
-        $(".slide img").eq(nextIdx).fadeIn();
-    
-        // インデックスを更新
-        currentIdx = nextIdx;
-      }
-    });
-   });
+
+        $(function () {
+            $('.slide').each(function () {
+                // スライド（画像）の数を取得
+                var $slides = $(this).find('img'),
+                    slideNum = $slides.length,
+                    currentIdx = 0; // 何番目か
+
+                // 最初の画像をフェードイン
+                $(".slide img").eq(currentIdx).fadeIn();
+
+                // 3秒後に次のスライドを表示
+                setTimeout(dispNextSlide, 3000);
+
+                // 次のスライドを表示するメソッド
+                function dispNextSlide() {
+                    var nextIdx = currentIdx + 1;
+
+                    // 最後のスライドの場合ははじめに戻る
+                    if (nextIdx > (slideNum - 1)) {
+                        nextIdx = 0
+                    }
+
+                    // 現在のスライドをフェードアウト
+                    $(".slide img").eq(currentIdx).fadeOut();
+
+                    // 次のスライドをフェードイン
+                    $(".slide img").eq(nextIdx).fadeIn();
+
+                    // インデックスを更新
+                    currentIdx = nextIdx;
+                }
+            });
+        });
     </script>
 </head>
 
-
-<script>
-    $(".single-item").slick({
-  accessibility: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
-  dots: true,
-  fade: true,
-});
-</script>
 <body>
     <header>
         共通ヘッダー
@@ -80,16 +82,21 @@ $(function() {
             </div>
         </div>
         <!-- スライドショー -->
-        <div class="slide">
-            <!--画像を用意-->
-            <img src="./image/franchise/slide1.jpg" width="720" height="460"/>
-            <img src="./image/franchise/slide2.jpg" width="720" height="460"/>
-       
-          </div>
+        <div class="slide">-
+
+        </div>
         <!-- スライドショー -->
-        <img class="slide_show"src="./image/franchise/slide1.jpg" alt="">
+        <ul class="slider">
+            <li><img src="./image/franchise/slide1.jpg" alt="スライド画像1"></li>
+            <li><img src="./image/franchise/slide2.jpg" alt="スライド画像2"></li>
+            <li><img src="./image/franchise/slide3.jpg" alt="スライド画像3"></li>
+            <li><img src="./image/franchise/slide4.jpg" alt="スライド画像4"></li>
+            <li><img src="./image/franchise/slide5.jpg" alt="スライド画像5"></li>
+            <li><img src="./image/franchise/slide6.jpg" alt="スライド画像6"></li>
+            <!--/slider-->
+        </ul>
         <div class="top-banner1">
-            <img src="image/franchise/top.png" alt="">
+            <img src="image/franchise/top.png" alt="" class="FCimg">
         </div>
         <!-- <h1 class="top-heading">未経験でも始められるフランチャイズです!</h1> -->
         <div class="top-banner2">
@@ -102,79 +109,226 @@ $(function() {
                 <path d="M9 18l6-6-6-6" />
             </svg>
         </a>
-        <h2 class="heading-1">加盟店様増加中</h2>
+        <!-- <h2 class="heading-red-underbar"></h2> -->
+        <h2 class="underbar"><span class="underbar-Span JS_ScrollAnimationItem">加盟店様増加中</span></h2>
 
-        <img src="image/franchise/FCextending.jpg" alt="">
+        <img src="image/franchise/FCextending.jpg" alt=""  class="FCimg">
         <p>過去何年で--増加しています</p>
-        <h2 class="heading-1">最新マシンをスペースに合わせて</h2>
+        <h2 class="underbar"><span class="underbar-Span JS_ScrollAnimationItem">最新マシンをスペースに合わせて</span></h2>
 
-        <img src="image/franchise/machine.jpg" alt="">
-        <p>過去何年で--増加しています</p>
+        <div class="fifty">
+            <h3 class="heading-blue">
+                直輸入の最新マシンを採用
+            </h3>
+        </div>
+
+        <h2 class="heading-red">マシンへの投資はスペースに応じて最大限強化!</h2>
+        <!-- slide -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="4000">
+                    <div class="s-four-wrap">
+                        <img src="image/franchise/Swiper/slide1.jpg" width="640" height="480" class="swiper-img">
+                        <span class="s-four-text">プライベートルーム</span>
+                        <!-- <span class="s-four-sub">個室</span> -->
+                        <div class="s-four-box">自分だけの空間でトレーニングが可能。三密回避、ストレスフリー徹底清掃と個室という条件によりマスクなしでもOK!イヤホンなしでTV等も楽しめる
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="4000">
+                    <div class="s-four-wrap">
+                        <img src="image/franchise/Swiper/slide2.jpg" width="640" height="480" class="swiper-img">
+                        <span class="s-four-text">低酸素ルーム</span>
+                        <!-- <span class="s-four-sub">低酸素ルーム</span> -->
+                        <div class="s-four-box">世界のトップアスリートが愛用している【エベレストサミットⅡ】により標高3000mの高地トレーニングができる。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="4000">
+                    <div class="s-four-wrap">
+                        <img src="image/franchise/Swiper/slide3.jpg" width="640" height="480" class="swiper-img">
+                        <span class="s-four-text">女性専用ルーム</span>
+                        <!-- <span class="s-four-sub">女性専用ルーム</span> -->
+                        <div class="s-four-box">周りの視線を気にすることなく安心してご利用頂ける女性専用ルーム。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="4000">
+                    <div class="s-four-wrap">
+                        <img src="image/franchise/Swiper/slide4.jpg" width="640" height="480" class="swiper-img">
+                        <span class="s-four-text">筋力トレーニングエリア</span>
+                        <!-- <span class="s-four-sub">筋力トレーニングエリア</span> -->
+                        <div class="s-four-box">安全で使いやすい、筋肉トレーニングに最適なマシン。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="4000">
+                    <div class="s-four-wrap">
+                        <img src="image/franchise/Swiper/slide5.jpg" width="640" height="480" class="swiper-img">
+                        <span class="s-four-text">フリーウェイトエリア</span>
+                        <!-- <span class="s-four-sub">フリーウェイトエリア</span> -->
+                        <div class="s-four-box">スミスマシン・パワーラック始めプロ仕様のマシンが充実。</div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="4000">
+                    <div class="s-four-wrap">
+                        <img src="image/franchise/Swiper/slide6.jpg" width="640" height="480" class="swiper-img">
+                        <span class="s-four-text">有酸素運動エリア</span>
+                        <!-- <span class="s-four-sub">有酸素運動エリア</span> -->
+                        <div class="s-four-box">トレッドミル、バイク・ステップマシンなど多岐にわたりTV・インターネットを視聴しながら楽しめます。</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- slide -->
+        <!-- <img src="image/franchise/machine.jpg" alt=""> -->
+        <!-- <div class="fifty"></div> -->
+        <div class="fifty">
+            <h3 class="heading-blue">
+                各社比較
+            </h3>
+        </div>
 
 
 
+        <img src="image/franchise/table.PNG" alt="当社比較表" class="FCimg">
+
+
+        <h2 class="underbar"><span class="underbar-Span JS_ScrollAnimationItem">感染予防を徹底しています</span></h2>
+
+        <div class="fifty">
+            <h3 class="heading-blue">
+                コロナウイルス感染予防への取組み
+            </h3>
+        </div>
+
+        <p class="p-text">安心して会員様に利用して頂ける設備を目指し、様々な対策を実施しております。<br/>FC加盟店様にも共有して頂ける体制を整えております。</p>
+        <img src="image/franchise/covid2.PNG" alt="" class="FCimg">
+
+
+        <h2 class="underbar"><span class="underbar-Span JS_ScrollAnimationItem">高収益を生み出す秘密</span></h2>
+        <h2 class="underbar">リーズナブルな価格でも高収益を生み出す秘訣は...</h2>
+
+        <!-- <div class="fifty">
+            <h3 class="heading-blue">
+                ■マシン特化型のジムであること=
+            </h3>
+        </div>
+        <div class="fifty">
+            <h3 class="heading-blue">
+                ■スタッフ体制の省力化=
+            </h3>
+        </div>
+        <div class="fifty">
+            <h3 class="heading-blue">
+                ■経費変動の少ないビジネスモデル=
+            </h3>
+        </div>
+        <div class="fifty">
+            <h3 class="heading-blue">
+                ■既存施設で得られない会員獲得=
+            </h3>
+        </div> -->
+        <img src="image/franchise/HF24Method.PNG" alt="">
+        <p class="p-text">総合スポーツクラブからプールやスタジオなどの多大な維持費、<br/>経費が掛かる施設を排し、マシンに特化した施設。<br/>インストラクションが比較的容易でセルフトレーニングを促し低コストで運用可能です<br/>年中無休で24時間利用が可能なため、主に若年層に支持されています。</p>
+
+        <h2 class="underbar"><span class="underbar-Span JS_ScrollAnimationItem">開店までの流れ</span></h2>
 
 
         <div id="flowdiv">
-            <div class="item">
-                <h2 class="flow"><span>01</span>事業カンファレンス・プレゼン</h2>
-                <h2 class="flow"><span>02</span>加盟申請</h2>
-                <h2 class="flow"><span>03</span>立地調査・事業計画</h2>
-                <h2 class="flow"><span>04</span>物件確保</h2>
-                <h2 class="flow"><span>05</span>フランチャイズ加盟契約</h2>
-            </div>
-            <div class="item">
-                <h2 class="flow"><span>06</span>現地調査・設計契約</h2>
-                <h2 class="flow"><span>07</span>設計完了・ジムマシン発注</h2>
-                <h2 class="flow"><span>08</span>初回キックオフミーティング</h2>
-                <h2 class="flow"><span>09</span>工事・研修・マシン設置</h2>
-                <h2 class="flow"><span>10</span>先行入会・見学会</h2>
-            </div>
+            <h2 class="flow"><span>01</span>事業カンファレンス・プレゼン</h2>
+            <h2 class="flow"><span>02</span>加盟申請</h2>
+            <h2 class="flow"><span>03</span>立地調査・事業計画</h2>
+            <h2 class="flow"><span>04</span>物件確保</h2>
+            <h2 class="flow"><span>05</span>フランチャイズ加盟契約</h2>
+            <h2 class="flow"><span>06</span>現地調査・設計契約</h2>
+            <h2 class="flow"><span>07</span>設計完了・ジムマシン発注</h2>
+            <h2 class="flow"><span>08</span>初回キックオフミーティング</h2>
+            <h2 class="flow"><span>09</span>工事・研修・マシン設置</h2>
+            <h2 class="flow"><span>10</span>先行入会・見学会</h2>
+        </div>
+
+        <h3 class="case">
+            店舗に空きスペースがある方。<br/>
+            新規事業を探しておられる方。<br/>
+            業務転換を考えておられる方。<span>など</span>
+          
+            </h3>
 
         </div>
 
 
 
+        <!-- まずはお気軽にお問い合わせください。</p> -->
+        <h3 class="text-contact">お問合せ</h3>
 
-
-
-
-
-
-        <div class="example">
-            <li class="li-text">店舗に空きスペースがある方。</li>
-            <li class="li-text">新規事業を探しておられる方。</li>
-            <li class="li-text">業務転換を考えておられる方。<span>など</span></li>
-        </div>
-
-
-        </div>
-
-
-
-
-
-        まずはお気軽にお問い合わせください。</p>
         <div class="contact">
-            <h3 class="text-contact">お問合せ</h3>
-            <a class="apply">
-                資料請求・お問い合わせ
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 18l6-6-6-6" />
-                </svg>
-            </a>
-            <hr>
-            <a class="apply-2">
-                加盟店に応募する
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 18l6-6-6-6" />
-                </svg>
-            </a>
+            <div id="contact-div">
+                <a class="TEL">
+                    0749-64-2219
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+                </a>
+            </div>
+            <div id="contact-div">
+                <a class="apply">
+                    資料請求・お問い合わせ
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </a>
+                <hr>
+                <a class="apply2">
+                    加盟店に応募する
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </a>
+            </div>
+
+
 
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-6/js/6-1-6.js"></script>
 </body>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 1000,
+        },
+    });
+    // underbarAnimation
+    $(window).on('scroll',function(){
+
+$(".JS_ScrollAnimationItem").each(function(){
+  var position = $(this).offset().top;
+  var scroll = $(window).scrollTop();
+  var windowHeight = $(window).height();
+  if (scroll > position - windowHeight){
+    $(this).addClass('isActive');
+  }
+});
+
+});$(window).on('scroll',function(){
+
+  $(".JS_ScrollAnimationItem").each(function(){
+    var position = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > position - windowHeight){
+      $(this).addClass('isActive');
+    }
+  });
+  
+ });
+     // underbarAnimation
+
+</script>
 
 </html>
