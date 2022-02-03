@@ -39,7 +39,7 @@ main {
 
 .bg_test {
     float: left;
-    background-image: url("./image/franchise/FC_thubnail_touka.png");
+    background-image: url("../image/franchise/FC_thubnail_touka.png");
     background-position: left;
     width: 100%;
     background-repeat: no-repeat;
@@ -82,7 +82,9 @@ hr {
     background-color: rgb(193, 245, 252);
     text-align: center;
 	display: block;
-    background-image: url("/image/franchise/woman.jpg");
+    background-image: url("../image/franchise/woman2.png");
+    background-size: 200px;
+
 
 }
 .light-blue-div-children{
