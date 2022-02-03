@@ -7,7 +7,7 @@
 *****************************************/
 
 html, body {
-	height:100%;
+	height: 100%;
 }
 
 
@@ -21,14 +21,14 @@ html {
 body {
 	color: #333;
 	font-family: 'Lato', 'Noto Sans JP', sans-serif;
-  line-height:1.6;
+	line-height: 1.6;
 	text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 
 }
 
 body {
-  font-size: 1.3em;
+	font-size: 1.3em;
 }
 
 
@@ -36,14 +36,14 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
 	body {
 		font-size: 1.4em;
-  }
+	}
 }
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
 	body {
 		font-size: 1.5em;
-  }
+	}
 }
 
 
@@ -51,7 +51,7 @@ body {
 /***  List
 *****************************************/
 
-ul,ol {
+ul, ol {
 	list-style: none;
 }
 
@@ -64,12 +64,12 @@ dd {
 *****************************************/
 
 a {
-	color:#333;
-	text-decoration:none;
+	color: #333;
+	text-decoration: none;
 }
 
 a:hover, a:active {
-	color:#333;
+	color: #333;
 }
 
 
@@ -77,13 +77,13 @@ a:hover, a:active {
 *****************************************/
 
 figure, img {
-	vertical-align:bottom;
+	vertical-align: bottom;
 }
 
 /* 991px以下（スマホ・タブレット共通） */
 @media (max-width: 991px) {
 	img {
-		width:100%;
+		width: 100%;
 	}
 }
 
@@ -113,12 +113,12 @@ figure, img {
 /*** clear
 *****************************************/
 
-.clearfix:after{
-	display:block;
-	clear:both;
-	height:0;
-	visibility:hidden;
-	content:"";
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: "";
 }
 
 /***  表示・非表示
@@ -128,30 +128,32 @@ figure, img {
 /* 991px以下（スマホ・タブレット共通）*/
 @media (max-width: 991px) {
 	.pc {
-		display:none!important;		
+		display: none !important;
 	}
 }
 
 /* 768px以上（タブレット・PC共通）*/
 @media (min-width: 768px) {
-	.sp {	
-		display:none!important;
+	.sp {
+		display: none !important;
 	}
 }
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
+
 	.tb,
-	.sp-tb {	
-		display:none!important;
+	.sp-tb {
+		display: none !important;
 	}
 }
 
 /* 767px以下（スマホ用） */
 @media (max-width: 767px) {
+
 	.tb,
-	.tb-pc {	
-		display:none!important;
+	.tb-pc {
+		display: none !important;
 	}
 }
 
@@ -190,15 +192,15 @@ figure, img {
 /* 767px以下（スマホ用） */
 @media (max-width: 767px) {
 	.ws_pl_sp {
-    white-space: pre-line;
-  }
+		white-space: pre-line;
+	}
 }
 
 /* 991px以下（スマホ・タブレット共通） */
 @media (max-width: 991px) {
 	.ws_pl_st {
-    white-space: pre-line;
-  }
+		white-space: pre-line;
+	}
 }
 
 /* 768px以上991px以下（タブレット用） */
@@ -248,7 +250,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width:100%;
+	width: 100%;
 	z-index: 80;
 	background-color: blue;
 }
@@ -262,7 +264,7 @@ header {
 }
 
 /* 768x以上991px以下（タブレット用）*/
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
 	header {
 		height: 80px;
 		padding: 10px;
@@ -282,14 +284,12 @@ header {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
-	#header-logo {
-	}
+	#header-logo {}
 }
 
 /* 768x以上991px以下（タブレット用）*/
 @media (min-width: 768px) and (max-width: 991px) {
-	#header-logo {
-	}
+	#header-logo {}
 }
 
 /* 992px以上（PC用） */
@@ -309,7 +309,7 @@ header {
 }
 
 /* 991px以下（スマホ・タブレット共通） */
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
 	#header-logo img {
 		height: 40px;
 		width: auto;
@@ -335,47 +335,47 @@ header {
 		transform: translateX(0);
 		transition: transform .5s;
 	}
-		
+
 	.menu-trigger span {
 		background: #333;
 		box-sizing: border-box;
-		display:  inline-block;
+		display: inline-block;
 		height: 4px;
 		width: 100%;
-		position:absolute;
+		position: absolute;
 		left: 0;
 	}
-	
+
 	.menu-trigger span:nth-child(1) {
-		top:0;
+		top: 0;
 	}
-	
+
 	.menu-trigger span:nth-child(2) {
-		top:12px;
+		top: 12px;
 	}
-	
+
 	.menu-trigger span:nth-child(3) {
-		bottom:0;
+		bottom: 0;
 	}
-	
-	
-/*ハンバーガーボタン OPEN時の動き*/
+
+
+	/*ハンバーガーボタン OPEN時の動き*/
 	.menu-trigger.active {
-  transform: translateX(-70vw);
+		transform: translateX(-70vw);
 	}
-	
+
 	.menu-trigger.active span:nth-child(1) {
 		top: 50%;
 		-webkit-transform: rotate(135deg);
 		-moz-transform: rotate(135deg);
 		transform: rotate(135deg);
 	}
-	
+
 	.menu-trigger.active span:nth-child(2) {
 		width: 0;
 		left: 50%;
 	}
-	
+
 	.menu-trigger.active span:nth-child(3) {
 		top: 50%;
 		-webkit-transform: rotate(-135deg);
@@ -426,42 +426,42 @@ header {
 }
 
 /* 991px以下（スマホ・タブレット共通） */
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
 	.nav-wrap li {
 		padding: 0 10px;
 		border-bottom: 1px solid #CCC;
 	}
-	
+
 	.nav-wrap li a {
 		padding: 10px 0;
 	}
-		
-	
-/*ナビゲーション OPEN時の動き*/
+
+
+	/*ナビゲーション OPEN時の動き*/
 	.nav-wrap.open {
 		-webkt-transform: translateX(0);
 		transform: translateX(0);
 	}
-	
+
 	.overlay {
 		content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    opacity: 0;
-    transition: opacity .5s;
+		display: block;
+		width: 0;
+		height: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 90;
+		opacity: 0;
+		transition: opacity .5s;
 	}
-	
+
 	.overlay.open {
 		width: 100%;
-    height: 100%;
-    opacity: 1;
-  }		
+		height: 100%;
+		opacity: 1;
+	}
 }
 
 
@@ -478,14 +478,14 @@ header {
 /* 768px以上（タブレット・PC共通） */
 @media (min-width: 768px) {
 	.gnav li {
-			font-size: 1.6rem;
+		font-size: 1.6rem;
 	}
 }
 
 .mnav li span {
-  font-size: 1.2rem;
-  font-weight: normal;
-  padding:0 5px;
+	font-size: 1.2rem;
+	font-weight: normal;
+	padding: 0 5px;
 }
 
 /* 991px以下（スマホ・タブレット用）*/
@@ -506,7 +506,7 @@ header {
 }
 
 /* 992px以上（PC用） */
-@media (min-width: 992px) {	
+@media (min-width: 992px) {
 	.snav ul {
 		display: flex;
 		justify-content: flex-end;
@@ -516,40 +516,40 @@ header {
 		top: 0;
 		right: 0;
 	}
-	
+
 	.snav li {
 		font-size: 1.4rem;
 		line-height: 1.2;
 		text-align: left;
 		padding-right: 2em;
 	}
-	
+
 	.snav li a {
 		color: #336699;
 	}
-	
+
 	.snav li a:hover {
 		color: #ccc;
 	}
-	
+
 	.gnav {
 		display: flex;
 		justify-content: flex-end;
 		overflow: hidden;
 	}
-	
+
 	.mnav {
 		display: flex;
 		align-content: stretch;
 		justify-content: space-around;
 	}
-	
+
 	.mnav li {
 		border-right: 1px solid #CCC;
 		text-align: center;
 		align-self: center;
 	}
-	
+
 	.mnav li a {
 		font-weight: bold;
 		display: block;
@@ -557,15 +557,15 @@ header {
 		position: relative;
 		transition: 0.5s;
 	}
-	
+
 	.mnav li a::after {
 		background-color: #FF0000;
-    content: "";
-    display: block;
-    width: 0;
-    height: 1px;
+		content: "";
+		display: block;
+		width: 0;
+		height: 1px;
 		margin: 0 auto;
-    position: absolute;
+		position: absolute;
 		left: 50%;
 		transition: 0.5s;
 		-moz-transform: translateX(-50%);
@@ -574,24 +574,24 @@ header {
 	}
 
 	.mnav li a:hover::after {
-			width: 50%;
+		width: 50%;
 	}
-	
-	
-	
+
+
+
 	/*** Brand List
 *****************************************/
-	
+
 	.util-logo {
 		display: flex;
 	}
-	
+
 	.util-logo li img {
 		width: 100%;
 	}
 }
 
-	/* 767px以下（スマホ用）*/
+/* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
 	.util-logo li {
 		padding: 10px;
@@ -611,19 +611,19 @@ header {
 	.util-logo li img {
 		width: 50%;
 	}
-	
+
 	.snav li a,
 	.sidebtn li a {
 		display: block;
-	}	
+	}
 }
 
 /* 768px以上991px以下（タブレット用）*/
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
 	.util-logo li img {
 		width: 30%;
 	}
-} 
+}
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
@@ -660,14 +660,14 @@ header {
 		height: 100px;
 		margin-right: -140px;
 		margin-bottom: 10px;
-	transition: all 300ms 0s ease;
+		transition: all 300ms 0s ease;
 	}
-	
+
 	.sidebtn span {
 		display: inline-block;
 		margin-left: 1em;
 	}
-	
+
 	.sidebtn a {
 		font-size: 1.2em;
 		display: block;
@@ -675,23 +675,23 @@ header {
 		width: 100%;
 		padding: 1em 0 1em 1em;
 	}
-	
+
 	.sidebtn i {
-			vertical-align: middle;
+		vertical-align: middle;
 	}
-	
+
 	.gn-find i {
 		font-size: 2.4em;
 	}
-	
+
 	.gn-join i {
 		font-size: 1.8em;
 	}
-		
+
 	.sidebtn li:hover {
 		transform: translateX(-130px);
 	}
-	
+
 	.gn-find {
 		background: #0069CD;
 	}
@@ -701,7 +701,7 @@ header {
 	}
 
 	.gn-find a {
-			color: #FFF;
+		color: #FFF;
 	}
 
 	.gn-find a:hover {
@@ -757,7 +757,7 @@ footer {
 }
 
 /* 767px以下（スマホ用） */
-@media (max-width: 767px) {	
+@media (max-width: 767px) {
 	.f-nav ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -768,26 +768,26 @@ footer {
 }
 
 /* 768px以上（タブレット・PC共通） */
-@media (min-width: 768px) {	
+@media (min-width: 768px) {
 	.f-nav ul {
 		padding: 5px 0;
 	}
 }
 
 /* 767px以下（スマホ用） */
-@media (max-width: 767px) {	
+@media (max-width: 767px) {
 	.f-nav li {
 		display: flex;
 		flex-basis: 50%;
 		justify-content: center;
-    align-items: center;
+		align-items: center;
 	}
-		
+
 	.f-nav li:nth-child(odd) {
 		border-right: 1px solid #CCC;
 		border-bottom: 1px solid #CCC;
 	}
-	
+
 	.f-nav li:nth-child(even) {
 		border-bottom: 1px solid #CCC;
 	}
@@ -796,25 +796,25 @@ footer {
 /* 768x以上（タブレット・PC用）*/
 @media (min-width: 768px) {
 	.f-nav li {
-    display: inline-block;
+		display: inline-block;
 		padding-bottom: 1em;
-  }
-} 
+	}
+}
 
 
 /* 768px以上991px以下（タブレット用）*/
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
 	.f-nav li {
-    padding-right: 2em;
+		padding-right: 2em;
 		white-space: nowrap;
-  }
+	}
 }
 
 /* 992px以上（PC用）*/
 @media (min-width: 992px) {
-  .f-nav li {
-    padding-right: 4em;
-  }
+	.f-nav li {
+		padding-right: 4em;
+	}
 }
 
 .f-nav li a {
@@ -832,9 +832,9 @@ footer {
 	}
 
 }
-	
+
 .f-nav li a:hover {
-  color: #CCC;
+	color: #CCC;
 }
 
 
@@ -850,30 +850,30 @@ footer {
 		bottom: 0;
 		left: 0;
 	}
-	
+
 	.footer-btn ul {
 		display: flex;
 		padding: 5px;
 		justify-content: space-between;
 	}
-	
+
 	.footer-btn li {
 		border-radius: 10px;
 		box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.5);
 		width: 48%;
 		text-align: center;
 	}
-	
+
 	.footer-btn li a {
 		display: block;
 		padding: 1em;
-		text-align: center;		
+		text-align: center;
 	}
-	
+
 	.footer-btn li i {
 		padding-right: 5px;
-	}	
-	
+	}
+
 	.footer-btn .gn-find {
 		background: #FFC800;
 	}
@@ -883,7 +883,7 @@ footer {
 	}
 
 	.footer-btn .gn-join a {
-			color: #FFF;
+		color: #FFF;
 	}
 }
 
@@ -893,7 +893,7 @@ footer {
 	.footer-btn {
 		display: none;
 	}
-} 
+}
 
 
 
@@ -953,7 +953,7 @@ footer {
 		text-align: center;
 		padding: 10px 0;
 		position: relative;
-		}
+	}
 }
 
 
@@ -961,7 +961,7 @@ footer {
 *****************************************/
 
 #page-top {
-		position: fixed;
+	position: fixed;
 	z-index: 999;
 }
 
@@ -983,7 +983,7 @@ footer {
 		bottom: 50px;
 		right: 10px;
 	}
-} 
+}
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
@@ -992,23 +992,23 @@ footer {
 		font-size: 1.4em;
 		display: block;
 		padding: 5px 10px;
-		}
 	}
+}
 
 /* 768x以上（タブレット・PC用）*/
 @media (min-width: 768px) {
-#page-top a {
-	background:#EBEBEB;
-	border-radius:5px;
-	color:#000042;
-	font-size:2.4rem;
-	line-height: 50px;
-	text-align:center;
-	display:block;
-	width: 50px;
-	height: 50px;
-	margin: auto;
-}
+	#page-top a {
+		background: #EBEBEB;
+		border-radius: 5px;
+		color: #000042;
+		font-size: 2.4rem;
+		line-height: 50px;
+		text-align: center;
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+	}
 }
 
 /****************************************
@@ -1029,22 +1029,22 @@ section {
 
 /* 767px以下（スマホ用） */
 @media (max-width: 767px) {
-   section .inner {
-		 padding: 10px 5px;
- }
+	section .inner {
+		padding: 10px 5px;
+	}
 }
 
 /* 768px以上991px以下（タブレット用） */
-@media (min-width: 768px) and (max-width: 991px){
-   section .inner {
-		 padding: 2em 10px;
- }
-} 
+@media (min-width: 768px) and (max-width: 991px) {
+	section .inner {
+		padding: 2em 10px;
+	}
+}
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
 	section .inner {
-		 padding: 3em 0;
+		padding: 3em 0;
 	}
 }
 
@@ -1062,14 +1062,14 @@ section {
 /* 768px以上991px以下（タブレット用） */
 @media (min-width: 768px) and (max-width: 991px) {
 	#page-index {
-    height: 120px;
+		height: 120px;
 	}
 }
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
 	#page-index {
-    height: 160px;
+		height: 160px;
 	}
 }
 
@@ -1091,16 +1091,16 @@ section {
 /* 768px以上991px以下（タブレット用） */
 @media (min-width: 768px) and (max-width: 991px) {
 	#page-index h1 {
-    height: 120px;
-    padding: .8em 0 0 10px;
+		height: 120px;
+		padding: .8em 0 0 10px;
 	}
 }
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
 	#page-index h1 {
-    height: 160px;
-    padding: 1.5em 0 0;
+		height: 160px;
+		padding: 1.5em 0 0;
 	}
 }
 
@@ -1108,13 +1108,11 @@ section {
 	display: block;
 }
 
-.pi_txt_en {
-
-}
+.pi_txt_en {}
 
 .pi_txt_jp {
-  font-size: 1.4rem;
-  font-weight: normal;
+	font-size: 1.4rem;
+	font-weight: normal;
 }
 
 h2 {
@@ -1125,10 +1123,10 @@ h2 {
 /* 767px以下（スマホ用） */
 @media (max-width: 767px) {
 	h2 {
-  font-size: 2rem;
-	white-space: pre-line;
+		font-size: 2rem;
+		white-space: pre-line;
 	}
-	
+
 	h3 {
 		font-size: 1.6rem;
 	}
@@ -1136,10 +1134,10 @@ h2 {
 
 /* 768px以上991px以下（タブレット用） */
 @media (min-width: 768px) and (max-width: 991px) {
-  h2 {
+	h2 {
 		font-size: 3.0rem;
-  }
-	
+	}
+
 	h3 {
 		font-size: 2.2rem;
 	}
@@ -1147,18 +1145,18 @@ h2 {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
-  h2 {
+	h2 {
 		font-size: 4rem;
 		line-height: 1.5;
-  }
-	
+	}
+
 	h3 {
 		font-size: 2.6rem;
 	}
 }
 
 p {
-	text-align:left;
+	text-align: left;
 }
 
 
@@ -1175,18 +1173,18 @@ p {
 
 /* 768px以上（タブレット・PC共通）*/
 @media (min-width: 768px) {
-.section_title::before {
-	content: "";
-	display: inline-block;
-	width: 150px;
-  height: 5px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: black;
-	position: absolute;
-  bottom: -5px;
-}
+	.section_title::before {
+		content: "";
+		display: inline-block;
+		width: 150px;
+		height: 5px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		background-color: black;
+		position: absolute;
+		bottom: -5px;
+	}
 }
 
 .section_title_sub {
@@ -1195,8 +1193,7 @@ p {
 
 /* 768px以上991px以下（タブレット用） */
 @media (min-width: 768px) and (max-width: 991px) {
-	.section_title_sub {
-	}
+	.section_title_sub {}
 }
 
 /* 992px以上（PC用） */
@@ -1210,7 +1207,7 @@ p {
 @media (max-width: 767px) {
 	.section_lead {
 		font-size: 1.5rem;
-	  padding-bottom: .5em;
+		padding-bottom: .5em;
 	}
 }
 
@@ -1218,7 +1215,7 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
 	.section_lead {
 		font-size: 1.8rem;
-	  padding-bottom: .5em;
+		padding-bottom: .5em;
 	}
 }
 
@@ -1235,8 +1232,8 @@ p {
 *****************************************/
 
 .fl-box {
-	display:-webkit-box;
-  display:-ms-flexbox;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
@@ -1245,22 +1242,21 @@ p {
 	align-items: stretch;
 }
 
-
 /***　Table Box
 *****************************************/
 
 /* 768px以上（タブレット・PC共通） */
 @media (min-width: 768px) {
-.tb-box {
-	display: table;
-	width: 100%;
-	table-layout: fixed;
-	vertical-align: top;
+	.tb-box {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		vertical-align: top;
 	}
 
-.tbc-box {
-	display: table-cell;
-	vertical-align: top;
+	.tbc-box {
+		display: table-cell;
+		vertical-align: top;
 	}
 }
 
@@ -1270,7 +1266,7 @@ p {
 *****************************************/
 
 .img-box img {
-	width: 100%;	
+	width: 100%;
 }
 
 
@@ -1279,7 +1275,7 @@ p {
 *****************************************/
 
 .bg_blue {
-	background-color:#0041c8;
+	background-color: #0041c8;
 }
 
 .bg_lightblue {
@@ -1297,7 +1293,7 @@ p {
 /* 「詳しくはこちら」ボタン */
 
 a.more-btn {
-	background:#0041C8;
+	background: #0041C8;
 	border: 2px solid #FFF;
 	border-radius: 30px;
 	color: #FFF;
@@ -1307,15 +1303,15 @@ a.more-btn {
 	display: inline-block;
 	padding: 1.5em;
 	transition: .3s;
-	position:relative;
-	z-index:2;
-	overflow:hidden;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
 }
 
 /* 767px以下（スマホ用） */
 @media (max-width: 767px) {
-	a.more-btn {		
-    width: 80%;
+	a.more-btn {
+		width: 80%;
 		margin: 1em auto;
 	}
 }
@@ -1331,32 +1327,32 @@ a.more-btn {
 }
 
 a.more-btn::after {
-	display:block;
-	content:"";
-	position:absolute;
-	z-index:-1;
-	top:50%;
-	left:50%;
-	width:360px;
-	height:360px;
-	margin:-180px 0 0 -180px;
-	border-radius:50%;
-	transition:.5s;
+	display: block;
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	width: 360px;
+	height: 360px;
+	margin: -180px 0 0 -180px;
+	border-radius: 50%;
+	transition: .5s;
 }
 
 a.more-btn::after {
-	border:65px solid rgba(0,0,66,0);
+	border: 65px solid rgba(0, 0, 66, 0);
 }
 
 a.more-btn:hover {
 	border-color: #0041C8;
-	color:#0041C8;
+	color: #0041C8;
 }
 
 a.more-btn:hover::after {
 	border-width: 0;
-	border-color:#0041C8;
-	background:#fff;
+	border-color: #0041C8;
+	background: #fff;
 }
 
 
@@ -1368,34 +1364,34 @@ a.more-btn02 {
 	font-size: 1.4rem;
 	padding: 5px 15px;
 	position: relative;
-  transition: .3s;
+	transition: .3s;
 }
 
 a.more-btn02::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  background: #FFF;
-  transform-origin: right top;
-  transform: scale(0, 1);
-  transition: transform .3s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	content: '';
+	background: #FFF;
+	transform-origin: right top;
+	transform: scale(0, 1);
+	transition: transform .3s;
 }
 
 a.more-btn02:hover::after {
-  transform-origin: left top;
-  transform: scale(1, 1);
+	transform-origin: left top;
+	transform: scale(1, 1);
 }
 
 #inquiry {
-  background-image: linear-gradient( to bottom, rgba(255, 255, 255, .7),  rgba(255, 255, 255, 1) ),
-                    url("../images/common/inquiry_bg.jpg");
-  background-repeat: repeat, no-repeat;
-  background-position: center, center;
-  background-size: cover;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, 1)),
+		url("../images/common/inquiry_bg.jpg");
+	background-repeat: repeat, no-repeat;
+	background-position: center, center;
+	background-size: cover;
 }
 
 
@@ -1405,31 +1401,31 @@ a.more-btn02:hover::after {
 	width: 100%;
 	/*padding-top: 20%;*/
 	padding: 10px 0;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  color: #333;
-  background-color:rgba(255, 255, 255, .8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	color: #333;
+	background-color: rgba(255, 255, 255, .8);
 	text-align: center;
-  /*opacity:0;*/
-  transition: all 0.8s ease-in-out;
-/*  transform: translate3d(0,100%,0);*/
-  z-index:9999;
+	/*opacity:0;*/
+	transition: all 0.8s ease-in-out;
+	/*  transform: translate3d(0,100%,0);*/
+	z-index: 9999;
 	display: none;
 }
- 
+
 #alertie.visible {
-    will-change: transform;
-    /*transform: translate3d(0,0%,0);*/
-    /*opacity:1;*/
+	will-change: transform;
+	/*transform: translate3d(0,0%,0);*/
+	/*opacity:1;*/
 	display: block;
 }
- 
+
 #alertie h2 {
 	font-size: 1.2em;
 	margin-bottom: 0;
 }
- 
+
 #alertie p {
 	font-size: 1em;
 	text-align: center;
@@ -1438,9 +1434,9 @@ a.more-btn02:hover::after {
 #alertie strong {
 	font-size: 1.1em;
 }
- 
+
 #alertie a {
-    color: #BF3335;
+	color: #BF3335;
 }
 
 #closeie {
@@ -1456,7 +1452,7 @@ a.more-btn02:hover::after {
 
 #closeie:hover {
 	will-change: transform;
-	transform: scale(0.8) rotate(45deg);	
+	transform: scale(0.8) rotate(45deg);
 }
 
 #closeie::before,
@@ -1465,7 +1461,7 @@ a.more-btn02:hover::after {
 	background: #666;
 	display: block;
 	position: absolute;
-	
+
 }
 
 #closeie::before {

@@ -1,7 +1,8 @@
 main {
     background-color: rgb(241, 241, 241);
 }
-.FCimg{
+
+.FCimg {
     margin: 50px 0px;
 }
 
@@ -33,7 +34,6 @@ main {
 
 .bg_test-text {
     display: inline-block;
-    /* インラインブロックにする */
     margin-bottom: 20px;
 }
 
@@ -72,6 +72,7 @@ hr {
     color: red;
     font-size: 37px;
 }
+
 /* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
 .top-banner1 {
     width: 100%;
@@ -79,39 +80,47 @@ hr {
     background-color: white;
     margin: 100px 0px;
 }
-.light-blue-div-parent{
+
+.light-blue-div-parent {
     background-color: rgb(193, 245, 252);
     text-align: center;
-	display: block;
+    display: block;
     background-image: url("../image/franchise/woman2.png");
     background-size: 200px;
 }
-.light-blue-div-children{
-	text-align: left;
-	display: inline-block;
+
+.light-blue-div-children {
+    text-align: left;
+    display: inline-block;
 }
-.banner-heading-red-small{
+
+.banner-heading-red-small {
     color: crimson;
     font-weight: bold;
 
 }
-.banner-heading-red{
+
+.banner-heading-red {
     color: crimson;
     font-size: 4vw;
     font-weight: bold;
 }
-.qu{
+
+.qu {
     font-weight: bold;
 }
+
 /* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
 
 .top-banner2 {
     width: 100%;
     text-align: center;
 }
-#toppng{
+
+#toppng {
     margin: 50px 0px;
 }
+
 .detail {
     display: inline-block;
     padding-top: 11px;
@@ -177,31 +186,69 @@ hr {
     text-align: center;
     margin-bottom: 40px;
 }
-
-/* お問合せdiv */
-
-.contact {
-    background-color: rgb(226, 226, 226);
-    height: 300px;
-    width: 90%;
-    padding-top: 5px;
-    border-radius: 33px;
+/* FC展開中 */
+.FCextending-div{
+    background-image: url("../image/franchise/MAP2.jpg");
+    background-size:cover;                                 /* 画像のサイズを指定  */
+    width: 100%;
+    height: 400px;
+}
+.FCextending-text-div{
+    font-size: 1.5em;
 }
 
-
-/* お問合せdiv */
-
-.contact {
-    margin-left: auto;
+.FCextending-red-text{
+    font-size: 3em;
+    color: red;
+    text-align: center;
+    text-shadow: #000;
     margin-right: auto;
+    margin: 0;
+    text-align: left;
+    margin-right: auto;
+    text-shadow:
+    3px 3px 0px rgb(82, 82, 82), -3px -3px 0px rgb(82, 82, 82),
+   -3px 3px 0px rgb(82, 82, 82),  3px -3px 0px rgb(82, 82, 82),
+    3px 0px 0px rgb(82, 82, 82), -3px -0px 0px rgb(82, 82, 82),
+    0px 3px 0px rgb(82, 82, 82),  0px -3px 0px rgb(82, 82, 82);
+}
+/* FC展開中 */
+
+/* お問合せdiv */
+.attention {
+    text-align: center;
+    display: block;
 }
 
-
-/* お問合せｈ２ */
-
-.text-contact {
-    font-size: large;
+.f-red {
+    color: red;
+    display: inline-block;
+    text-align: left;
 }
+
+.tap {
+    text-align: center;
+}
+
+.time {
+    text-align: center;
+
+}
+
+#contactx {
+    border-top: solid 3px #dfdfdf;
+}
+
+.contact-time {
+    padding-top: 0px;
+    margin: 0px;
+}
+
+a.more-btn {
+    margin-bottom: 0px;
+}
+
+/* お問合せdiv */
 
 
 /* 資料請求・お問い合わせボタン */
@@ -315,7 +362,7 @@ hr {
 /* FCながれ */
 
 #flowdiv {
-    
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -483,7 +530,7 @@ a:active {
     margin: 10px 10px 23px 10px;
     padding: 10px 5px 10px 10px;
     border-radius: 3px;
-    box-shadow: 1px 3px 7px 0px #f14747;
+    box-shadow: 1px 3px 7px 0px #4e5264;
     border-radius: 0%;
 }
 
@@ -514,15 +561,59 @@ a:active {
 
 /* スライドショー */
 /* 秘訣 */
-.method{
+.method {
     background-color: rgb(66, 66, 138);
     color: cornsilk;
+    font-size: 1.5em;
+    display: flex;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
-.method h3{
-    margin-top: 12px;
-    float: left;
+.method-h2{
+    margin-bottom: 20px;
+}
+.method-title {
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.method-text {
+    font-size: 1vw;
+    margin: auto;
+}
+.box_inner{
+    margin-bottom: 30px;
 }
 /* 秘訣 */
+/* 妥協 */
+.box {
+    position: relative;
+
+}
+
+
+
+.box h3 {
+    margin: 0;
+    text-align: left;
+    margin-right: auto;
+}
+
+.box h3:first-letter {
+    font-size: 1.4em;
+    color: #034564;
+}
+
+.method-text2 {
+    margin-right: auto;
+    margin: 0;
+    text-align: left;
+    margin-right: auto;
+}
+
+/* 妥協 */
 
 /* 帯見出し */
 .heading-blue {
@@ -536,6 +627,7 @@ a:active {
     border-top: 3px solid #474cfe;
 
 }
+
 /* .heading-blue span{
     font-size: 20px;
     float: right;
@@ -559,22 +651,29 @@ a:active {
     right: 0;
     border-left: 5px solid #333;
 }
-
+.p-text-parent{
+    width: 100%;
+}
 /* 帯見出し */
 .p-text {
 
     text-align: center;
     font-weight: bold;
+    text-align: left;
+    display: inline-block;
 }
-.underbar{
+
+.underbar {
     margin-bottom: 50px;
 }
+
 /* underBarAnimation */
 .underbar-Span {
     position: relative;
     z-index: 1;
-  }
-  .underbar-Span:after {
+}
+
+.underbar-Span:after {
     content: '';
     position: absolute;
     left: 0;
@@ -584,11 +683,12 @@ a:active {
     background: #5bc8ac;
     z-index: -1;
     transition: all 0.8s;
-  }
-  .underbar-Span.isActive:after {
+}
+
+.underbar-Span.isActive:after {
     width: 100%;
-  }
-  
+}
+
 /* underBarAnimation */
 /* Swiperslide */
 .swiper {
@@ -681,62 +781,64 @@ a:active {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
- }
- .contact-div {
+}
+
+.contact-div {
     width: calc(100% / 2);
     text-align: center;
- }
+}
 
 /* お問合せフォーム */
 
 
 /* TEL一時的消す */
 .TEL {
-	display: inline-block;
-	padding-top: 10px;
-	padding-right: 62px;
-	padding-bottom: 10px;
-	padding-left: 36px;
-	margin: 0px;
-	background-color: #1d2cf5;
-	background-image: none;
-	background-size: contain;
-	color: #fcf5f5;
-	text-decoration: none;
-	border-width: 2px;
-	border-style: solid;
-	border-color: #424242;
-	border-radius: 36px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-	box-shadow: none;
-	-webkit-appearance: none;
-	line-height: 1.6;
-	position: relative;
-	text-align: left;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 36px;
+    margin: 0px;
+    background-color: #1d2cf5;
+    background-image: none;
+    background-size: contain;
+    color: #fcf5f5;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #424242;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: none;
+    -webkit-appearance: none;
+    line-height: 1.6;
+    position: relative;
+    text-align: left;
 }
 
 .TEL:hover {
-	background-color: #fff;
-	color: #424242;
+    background-color: #fff;
+    color: #424242;
 }
 
 .TEL svg {
-	width: 29px;
-	height: auto;
-	position: absolute;
-	top: 50%;
-	left: auto;
-	transform: translateY(-50%);
-	transition: all 0.3s ease 0s;
-	stroke: #fcf5f5;
-	stroke-width: 2px;
-	right: 8px;
+    width: 29px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    stroke: #fcf5f5;
+    stroke-width: 2px;
+    right: 8px;
 }
 
 .TEL:hover svg {
-	stroke: #424242;
+    stroke: #424242;
 }
+
 /* TEL一時的消す */
 @keyframes slideFromRightBox {
 
@@ -758,17 +860,30 @@ a:active {
     .bg_test {
         padding-top: 100px;
     }
+
 }
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
     .bg_test {
         padding-top: 140px;
         padding-left: 50px;
     }
 
-    .top_banner_text1{
+    .top_banner_text1 {
         font-size: 30px;
+    }
+
+    .method {
+        width: 100%;
+        height: 30px;
     }
 }
 
@@ -781,11 +896,19 @@ a:active {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
-    .heading-red-underbar{
+    .FCextending-div{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;  
+        height: 500px;  
+    }
+
+    .heading-red-underbar {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-        }
+    }
+
     .bg_test {
 
         padding-top: 100px;
@@ -801,30 +924,33 @@ a:active {
         font-size: 50px;
     }
 
-    .heading-blue {
+    .heading-blue {}
 
-    }
-    .fifty{
+    .fifty {
         width: 55%;
         margin-left: auto;
         margin-right: auto;
     }
-    .flow{
+
+    .flow {
         width: 40%;
         margin-left: auto;
         margin-right: auto;
         font-size: 20px;
 
     }
-    .case{
+
+    .case {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
+
     .contact {
         width: 70%;
     }
-    
+
+
 }
 
 @media (max-width: 535px) {
