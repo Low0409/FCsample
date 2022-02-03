@@ -77,6 +77,7 @@ hr {
     width: 100%;
     /* text-align: center; */
     background-color: white;
+    margin: 100px 0px;
 }
 .light-blue-div-parent{
     background-color: rgb(193, 245, 252);
@@ -84,8 +85,6 @@ hr {
 	display: block;
     background-image: url("../image/franchise/woman2.png");
     background-size: 200px;
-
-
 }
 .light-blue-div-children{
 	text-align: left;
@@ -512,9 +511,18 @@ a:active {
     color: black;
 }
 
-/* 問い合わせ～な方など */
 
 /* スライドショー */
+/* 秘訣 */
+.method{
+    background-color: rgb(66, 66, 138);
+    color: cornsilk;
+}
+.method h3{
+    margin-top: 12px;
+    float: left;
+}
+/* 秘訣 */
 
 /* 帯見出し */
 .heading-blue {
@@ -528,7 +536,10 @@ a:active {
     border-top: 3px solid #474cfe;
 
 }
-
+/* .heading-blue span{
+    font-size: 20px;
+    float: right;
+} */
 .heading-blue:after, sample2:before {
     content: "";
     position: absolute;
