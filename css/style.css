@@ -72,11 +72,37 @@ hr {
     color: red;
     font-size: 37px;
 }
-
+/* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
 .top-banner1 {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    background-color: white;
 }
+.light-blue-div-parent{
+    background-color: rgb(193, 245, 252);
+    text-align: center;
+	display: block;
+    background-image: url("/image/franchise/woman.jpg");
+
+}
+.light-blue-div-children{
+	text-align: left;
+	display: inline-block;
+}
+.banner-heading-red-small{
+    color: crimson;
+    font-weight: bold;
+
+}
+.banner-heading-red{
+    color: crimson;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.qu{
+    font-weight: bold;
+}
+/* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
 
 .top-banner2 {
     width: 100%;
