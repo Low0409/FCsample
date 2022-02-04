@@ -7,7 +7,9 @@ main {
 }
 
 .top_banner_text1 {
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+
     color: rgb(253, 253, 253);
     font-weight: 800;
     font-family: 'Courier New', Courier, monospace;
@@ -37,19 +39,51 @@ main {
 }
 
 .bg_test {
-    float: left;
-    background-image: url("../image/franchise/FC_thubnail_touka.png");
-    background-position: left;
+    /* background-image: url("../image/franchise/FC_thubnail_touka.png"); */
+    background-image: url("../image/franchise/FC_thubnail4.jpg");
+    background-position: left center;
     width: 100%;
     background-repeat: no-repeat;
     background-color: rgb(37, 45, 48);
+    
     padding-left: 200px;
     padding-top: 220px;
     margin-bottom: 120px;
-    max-height: 480px;
+    /* height: 480px; */
+    height: 50vh;
     filter: contrast(120%);
+    /* 追加スマホでcover */
+    background-size: auto;
+}
+/* 新バージョン */
+
+.new_top_banner{
+    background-image: url("../image/franchise/newFC_thubnail.jpg");
+    background-size: auto;
 
 }
+.new_top_banner_text{
+    color: #fff;
+    font-size: clamp(1.8rem, 2.5vw, 4.0rem);
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
+        -3px 3px 3px #000, 3px -3px 3px #000,
+        3px 0px 3px #000, -3px -0px 3px #000,
+        0px 3px 3px #000, 0px -3px 3px #000;
+    text-align: right;
+    /* スライドとの間の空白 */
+    margin-bottom: 380px;
+    padding-top: 150px;
+    padding-right: 60px;
+}
+.new_banner_text2{
+    color: rgb(204, 41, 41);
+}
+.new_banner_text1 span{
+    color: crimson;
+}
+/* 新バージョン */
 
 .slide_show {
     width: 100%;
@@ -118,7 +152,7 @@ hr {
     font-size: 1.5em;
     color: #333;
     /* border-top: 2px solid #777; */
-    border-bottom: 2px solid #777;
+    border-bottom: 2px solid rgb(192, 192, 192);
 }
 
 
@@ -558,9 +592,7 @@ a:active {
     display: inline-block;
 }
 
-.underbar {
-    /* margin-bottom: 50px; */
-}
+
 
 /* underBarAnimation */
 .underbar-Span {
@@ -697,6 +729,8 @@ a:active {
 @media (max-width: 767px) {
     .bg_test {
         padding-top: 100px;
+        background-size: cover;
+
     }
 
     .area-pc {
@@ -744,8 +778,24 @@ a:active {
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
-    .area-pc {display: none; }
+    .new_top_banner{
+        background-size: 1200px;
 
+    }
+    .new_top_banner_text{
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 0px;
+        /* スライドとの空白 */
+        margin-bottom: 80px;
+
+    }
+    .new_banner_text1{
+        padding-top: 150px;
+    }
+
+    .area-pc {display: none; }
+    /* .bg_test-text {display: none; } */
     .pc {
         display: none !important;
     }
