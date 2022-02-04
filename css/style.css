@@ -113,53 +113,14 @@ hr {
 #toppng {
     margin: 50px 0px;
 }
-
-.detail {
-    display: inline-block;
-    padding-top: 11px;
-    padding-right: 62px;
-    padding-bottom: 10px;
-    padding-left: 36px;
-    margin: 0px;
-    background-color: #214cdb;
-    background-image: none;
-    background-size: contain;
-    color: #faf2f2;
-    text-decoration: none;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #111930;
-    border-radius: 0px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: none;
-    -webkit-appearance: none;
-    line-height: 1.6;
-    position: relative;
-    text-align: left;
+.area-sp{
+    padding: 0.3em 0;
+    font-size: 1.5em;
+    color: #333;
+    /* border-top: 2px solid #777; */
+    border-bottom: 2px solid #777;
 }
 
-.detail:hover {
-    background-color: rgb(37, 45, 48);
-    color: #424242;
-}
-
-.detail svg {
-    width: 29px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: auto;
-    transform: translateY(-50%);
-    transition: all 0.3s ease 0s;
-    stroke: #faf2f2;
-    stroke-width: 3px;
-    right: 24px;
-}
-
-.detail:hover svg {
-    stroke: #424242;
-}
 
 .heading-red-underbar {
     color: red;
@@ -712,7 +673,9 @@ a:active {
     width: calc(100% / 2);
     text-align: center;
 }
-
+.text-contact{
+    margin: 30px 0px;
+}
 /* お問合せフォーム */
 
 @keyframes slideFromRightBox {
@@ -775,7 +738,7 @@ a:active {
         background-size: contain;
     }
     .top_banner_text1{
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
@@ -793,11 +756,13 @@ a:active {
 
     .bg_test {
         padding-top: 140px;
-        padding-left: 50px;
+        padding-left: 10px;
+        background-size: contain;
+
     }
 
     .top_banner_text1 {
-        font-size: 6vw;
+        font-size: 5vw;
         padding-left: 50px;
 
     }
