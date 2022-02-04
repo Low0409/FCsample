@@ -21,16 +21,15 @@ main {
 .top_banner_text3 {
     color: crimson;
     font-size: 7vw;
-
     font-weight: bold;
     text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
         -3px 3px 3px #000, 3px -3px 3px #000,
         3px 0px 3px #000, -3px -0px 3px #000,
         0px 3px 3px #000, 0px -3px 3px #000;
     text-align: right;
+    padding-bottom: 0px;
 }
 
-.bg_text {}
 
 .bg_test-text {
     display: inline-block;
@@ -52,21 +51,15 @@ main {
 
 }
 
-
-
 .slide_show {
     width: 100%;
     height: auto;
 
 }
 
-
-
-
 hr {
     border: 1px solid transparent;
 }
-
 
 .top-heading {
     color: red;
@@ -86,7 +79,7 @@ hr {
     text-align: center;
     display: block;
     background-image: url("../image/franchise/woman2.png");
-    background-size: 200px;
+    background-size: 180px;
 }
 
 .light-blue-div-children {
@@ -186,18 +179,22 @@ hr {
     text-align: center;
     margin-bottom: 40px;
 }
+
 /* FC展開中 */
-.FCextending-div{
+.FCextending-div {
     background-image: url("../image/franchise/MAP2.jpg");
-    background-size:cover;                                 /* 画像のサイズを指定  */
     width: 100%;
     height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
-.FCextending-text-div{
+
+.FCextending-text-div {
     font-size: 1.5em;
 }
 
-.FCextending-red-text{
+.FCextending-red-text {
     font-size: 3em;
     color: red;
     text-align: center;
@@ -207,11 +204,23 @@ hr {
     text-align: left;
     margin-right: auto;
     text-shadow:
-    3px 3px 0px rgb(82, 82, 82), -3px -3px 0px rgb(82, 82, 82),
-   -3px 3px 0px rgb(82, 82, 82),  3px -3px 0px rgb(82, 82, 82),
-    3px 0px 0px rgb(82, 82, 82), -3px -0px 0px rgb(82, 82, 82),
-    0px 3px 0px rgb(82, 82, 82),  0px -3px 0px rgb(82, 82, 82);
+        3px 3px 0px rgb(255, 255, 255), -3px -3px 0px rgb(255, 255, 255),
+        -3px 3px 0px rgb(255, 255, 255), 3px -3px 0px rgb(255, 255, 255),
+        3px 0px 0px rgb(255, 255, 255), -3px -0px 0px rgb(255, 255, 255),
+        0px 3px 0px rgb(255, 255, 255), 0px -3px 0px rgb(255, 255, 255);
 }
+
+.distribution {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.area-pc {
+    width: 25%;
+}
+
 /* FC展開中 */
 
 /* お問合せdiv */
@@ -253,102 +262,7 @@ a.more-btn {
 
 /* 資料請求・お問い合わせボタン */
 
-.apply {
-    display: inline-block;
-    padding-top: 11px;
-    padding-right: 62px;
-    padding-bottom: 10px;
-    padding-left: 36px;
-    margin: 0px;
-    background-color: #e61c1c;
-    background-image: none;
-    background-size: contain;
-    color: rgb(37, 45, 48)fff;
-    text-decoration: none;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #d91616;
-    border-radius: 33px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: none;
-    -webkit-appearance: none;
-    line-height: 1.6;
-    position: relative;
-    text-align: left;
-    margin-bottom: 15px;
-}
 
-.apply:hover {
-    background-color: #fff;
-    color: #424242;
-}
-
-.apply svg {
-    width: 29px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: auto;
-    transform: translateY(-50%);
-    transition: all 0.3s ease 0s;
-    stroke: rgb(37, 45, 48)fff;
-    stroke-width: 3px;
-    right: 24px;
-}
-
-.apply2:hover svg {
-    stroke: #424242;
-}
-
-/* 加盟店に応募ボタン */
-
-.apply2 {
-    display: inline-block;
-    padding-top: 10px;
-    padding-right: 62px;
-    padding-bottom: 10px;
-    padding-left: 34px;
-    margin: 0px;
-    background-color: #14f72e;
-    background-image: none;
-    background-size: contain;
-    color: #424242;
-    text-decoration: none;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #424242;
-    border-radius: 72px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: none;
-    -webkit-appearance: none;
-    line-height: 1.6;
-    position: relative;
-    text-align: left;
-}
-
-.apply2:hover {
-    background-color: #fff;
-    color: #424242;
-}
-
-.apply2 svg {
-    width: 24px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: auto;
-    transform: translateY(-50%);
-    transition: all 0.3s ease 0s;
-    stroke: #424242;
-    stroke-width: 2px;
-    right: 8px;
-}
-
-.apply2:hover svg {
-    stroke: #424242;
-}
 
 .li-text {
     color: red;
@@ -359,7 +273,7 @@ a.more-btn {
 }
 
 
-/* FCながれ */
+/* FCオープンまでのながれ */
 
 #flowdiv {
 
@@ -400,7 +314,6 @@ a.more-btn {
 /* 右の数字  */
 
 .flow span {
-    font-size: 40px;
     font-size: 3.0rem;
     position: absolute;
     z-index: 1;
@@ -411,6 +324,21 @@ a.more-btn {
     padding-left: 16px;
     color: rgb(255, 254, 251);
 }
+
+.flow:last-child {
+    background-color: #ff74ae;
+}
+
+.flow:last-child::before {
+    background-color: rgb(56, 56, 77);
+
+}
+
+.flow-h3 {
+    margin: 30px 0px;
+}
+
+/* FCオープンまでのながれ */
 
 /* スライドショー */
 .slider {
@@ -571,9 +499,11 @@ a:active {
     margin-right: auto;
     margin-bottom: 40px;
 }
-.method-h2{
-    margin-bottom: 20px;
+
+.method-h2 {
+    margin: 20px 0px;
 }
+
 .method-title {
     margin-left: 8px;
     white-space: nowrap;
@@ -583,9 +513,11 @@ a:active {
     font-size: 1vw;
     margin: auto;
 }
-.box_inner{
+
+.box_inner {
     margin-bottom: 30px;
 }
+
 /* 秘訣 */
 /* 妥協 */
 .box {
@@ -651,9 +583,11 @@ a:active {
     right: 0;
     border-left: 5px solid #333;
 }
-.p-text-parent{
+
+.p-text-parent {
     width: 100%;
 }
+
 /* 帯見出し */
 .p-text {
 
@@ -664,7 +598,7 @@ a:active {
 }
 
 .underbar {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 /* underBarAnimation */
@@ -703,7 +637,6 @@ a:active {
 }
 
 .s-four-text,
-.s-four-sub,
 .s-four-box {
     position: absolute;
     width: 100%;
@@ -734,10 +667,7 @@ a:active {
     border-radius: 5px;
 }
 
-.s-four-sub {
-    top: 55%;
-    font-size: 2vw;
-}
+
 
 .s-four-box {
     bottom: 0;
@@ -753,10 +683,7 @@ a:active {
 
 }
 
-.swiper-slide-active .s-four-sub {
-    animation: slideFromRightSub 2.0s ease 0s 1 normal;
 
-}
 
 .swiper-slide-active .s-four-box {
     animation: slideFromRightBox 1.0s ease 0s 1 normal;
@@ -771,8 +698,6 @@ a:active {
 
     /* margin-top: 200px; */
 }
-
-.swiper-slide {}
 
 /* お問合せフォーム */
 .contact {
@@ -790,56 +715,6 @@ a:active {
 
 /* お問合せフォーム */
 
-
-/* TEL一時的消す */
-.TEL {
-    display: inline-block;
-    padding-top: 10px;
-    padding-right: 62px;
-    padding-bottom: 10px;
-    padding-left: 36px;
-    margin: 0px;
-    background-color: #1d2cf5;
-    background-image: none;
-    background-size: contain;
-    color: #fcf5f5;
-    text-decoration: none;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #424242;
-    border-radius: 36px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: none;
-    -webkit-appearance: none;
-    line-height: 1.6;
-    position: relative;
-    text-align: left;
-}
-
-.TEL:hover {
-    background-color: #fff;
-    color: #424242;
-}
-
-.TEL svg {
-    width: 29px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: auto;
-    transform: translateY(-50%);
-    transition: all 0.3s ease 0s;
-    stroke: #fcf5f5;
-    stroke-width: 2px;
-    right: 8px;
-}
-
-.TEL:hover svg {
-    stroke: #424242;
-}
-
-/* TEL一時的消す */
 @keyframes slideFromRightBox {
 
     0%,
@@ -861,10 +736,53 @@ a:active {
         padding-top: 100px;
     }
 
+    .area-pc {
+        font-size: 10px;
+    }
+
+    .FCextending-div {
+        background-size: contain;
+    }
+
+    .FCextending-red-text {
+        font-size: 20px;
+    }
+
+    .FCextending-red-text {
+        font-size: 30px;
+    }
+
+    .qu {
+        padding-left: 80px;
+    }
+
+    .banner-heading-red-small {
+        padding-left: 60px;
+    }
+
+    .light-blue-div-parent {
+        background-color: rgb(193, 245, 252);
+        text-align: center;
+        display: block;
+        background-image: url("../image/franchise/woman2.png");
+        background-size: 100px;
+    }
+
+    .FCextending-div{
+        height: 200px;
+    }
+    .bg_test{
+        background-size: contain;
+    }
+    .top_banner_text1{
+        font-size: 30px;
+    }
 }
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+    .area-pc {display: none; }
+
     .pc {
         display: none !important;
     }
@@ -872,19 +790,41 @@ a:active {
     .sp {
         display: block !important;
     }
+
     .bg_test {
         padding-top: 140px;
         padding-left: 50px;
     }
 
     .top_banner_text1 {
-        font-size: 30px;
+        font-size: 6vw;
+        padding-left: 50px;
+
     }
 
     .method {
         width: 100%;
         height: 30px;
     }
+
+
+
+    .box_inner {
+        padding-left: 10%;
+
+    }
+
+    .flow {
+        font-size: 20px;
+    }
+
+    .area-pc {
+        font-size: 1.5em;
+    }
+    .bg_text{
+        padding: 0px 0px 50px 50px;
+    }
+
 }
 
 
@@ -892,15 +832,22 @@ a:active {
 @media (min-width: 768px) {}
 
 /* 768x以上991px以下（タブレット用）*/
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .FCextending-red-text {
+        font-size: 2.5em;
+    }
+}
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
-    .FCextending-div{
+    .br-sp {display: none; }
+    .area-sp {display: none; }
+
+    .FCextending-div {
         width: 100%;
         margin-left: auto;
-        margin-right: auto;  
-        height: 500px;  
+        margin-right: auto;
+        height: 500px;
     }
 
     .heading-red-underbar {
@@ -924,7 +871,6 @@ a:active {
         font-size: 50px;
     }
 
-    .heading-blue {}
 
     .fifty {
         width: 55%;
@@ -932,13 +878,7 @@ a:active {
         margin-right: auto;
     }
 
-    .flow {
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
 
-    }
 
     .case {
         width: 50%;
@@ -950,7 +890,12 @@ a:active {
         width: 70%;
     }
 
-
+    .flow {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 535px) {
