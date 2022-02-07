@@ -9,7 +9,7 @@ main {
 
 
 /* 新バージョン */
-
+/* gitテスト */
 .new_top_banner {
     background-image: url("../image/franchise/newFC_thubnail.jpg");
     background-size: auto;
@@ -729,7 +729,11 @@ a:active {
     .FCextending-div {
         height: 200px;
     }
-
+    /* お問合せボタン縦並び */
+    .fl-box{
+        justify-content:flex-end;
+        flex-flow: column;
+    }
 
 
 }
