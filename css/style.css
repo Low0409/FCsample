@@ -5,9 +5,10 @@ main {
 .FCimg {
     margin: 50px 0px;
 }
-
-
-
+.covid-picture{
+    margin: 50px 0px;
+    width: 100%;
+}
 /* 新バージョン */
 /* gitテスト */
 .new_top_banner {
@@ -44,6 +45,11 @@ main {
     text-shadow: 0px 0px 0 rgb(0, 0, 0);
     -webkit-text-stroke: 0px rgb(0, 0, 0);
     text-shadow: 2px 2px 0 rgb(2, 2, 2);
+    transform: rotate(-15deg);
+    display: inline-block;
+    /* border: 7px solid #ff0000; */
+    border-radius: 20%;
+    padding-left:10px;
 }
 
 /* 新バージョン */
@@ -519,10 +525,7 @@ a:active {
 
 }
 
-/* .heading-blue span{
-    font-size: 20px;
-    float: right;
-} */
+
 .heading-blue:after, sample2:before {
     content: "";
     position: absolute;
@@ -543,13 +546,9 @@ a:active {
     border-left: 5px solid #333;
 }
 
-.p-text-parent {
-    width: 100%;
-}
 
 /* 帯見出し */
 .p-text {
-
     text-align: center;
     font-weight: bold;
     text-align: left;
@@ -696,10 +695,6 @@ a:active {
 
     .area-pc {
         font-size: 10px;
-    }
-
-    .FCextending-div {
-        background-size: contain;
     }
 
     .FCextending-red-text {
@@ -865,6 +860,9 @@ a:active {
         margin-left: auto;
         margin-right: auto;
         font-size: 20px;
+    }
+    .FCextending-div {
+        background-size: contain;
     }
 }
 
