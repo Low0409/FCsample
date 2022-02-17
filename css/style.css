@@ -9,6 +9,9 @@ main {
     margin: 50px 0px;
     width: 100%;
 }
+.width100{
+    width: 100%;
+}
 /* 新バージョン */
 /* gitテスト */
 .new_top_banner {
@@ -124,7 +127,10 @@ hr {
     /* border-top: 2px solid #777; */
     border-bottom: 2px solid rgb(192, 192, 192);
 }
+.colum{
+    margin-right: 30px;
 
+}
 
 .heading-red-underbar {
     color: red;
@@ -144,6 +150,40 @@ hr {
     text-align: center;
     margin-bottom: 40px;
 }
+/* 基本戦略・コンセプト */
+.concept{
+    padding-left: 15%;
+}
+.concept-text{
+    font-size:calc(0.8em + 1vw);
+    float: left;
+    background: linear-gradient(#ffffff, #c2c2c2);
+    padding: left 80%;
+    border-radius: 5px;
+    padding: 2px;
+}
+.v-text{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    background: linear-gradient(#05FBFF, #1E00FF);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size:calc(0.8em + 1vw);
+    margin-top: 10px;
+}
+.h-text{
+    font-size: 1.5em;
+}
+.row {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .col { 
+    width: 100%;
+    height: 100px;
+  }
+/* 基本戦略・コンセプト */
 
 /* FC展開中 */
 .FCextending-div {
@@ -481,6 +521,7 @@ a:active {
 
 .box_inner {
     margin-bottom: 30px;
+    /* background-color: #bfcfff; */
 }
 
 /* 秘訣 */
@@ -500,7 +541,7 @@ a:active {
 
 .box h3:first-letter {
     font-size: 1.4em;
-    color: #034564;
+    color: #131b4b;
 }
 
 .method-text2 {
@@ -672,7 +713,54 @@ a:active {
 .text-contact {
     margin: 30px 0px;
 }
+/* //ボタン */
 
+.form_btn {
+	display: inline-block;
+	padding-top: 20px;
+	padding-right: 92px;
+	padding-bottom: 23px;
+	padding-left: 90px;
+	margin: 0px;
+	background-color: #fff;
+	background-image: linear-gradient(116deg, #2d11fa, #2bb4d6);
+	background-size: contain;
+	color: #fff;
+	text-decoration: none;
+	border-width: 0px;
+	border-style: solid;
+	border-color: #424242;
+	border-radius: 41px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	box-shadow: none;
+	-webkit-appearance: none;
+	line-height: 1.6;
+	position: relative;
+	text-align: left;
+}
+
+.form_btn:hover {
+	opacity: 0.7;
+}
+
+.form_btn svg {
+	width: 38px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: auto;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	stroke: #fff;
+	stroke-width: 2px;
+	right: 16px;
+}
+
+.form_btn:hover svg {
+	stroke: undefined;
+}
+/* //ボタン */
 /* お問合せフォーム */
 
 @keyframes slideFromRightBox {
@@ -729,7 +817,9 @@ a:active {
         justify-content:flex-end;
         flex-flow: column;
     }
-
+    .colum{
+        margin-right: 10px;
+    }
 
 }
 
@@ -790,7 +880,9 @@ a:active {
     .bg_text {
         padding: 0px 0px 50px 50px;
     }
-
+    .concept{
+        padding-left: 0%;
+    }
 }
 
 
