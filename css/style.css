@@ -5,7 +5,7 @@ main {
 .FCimg {
     margin: 50px 0px;
 }
-.covid-picture{
+.covid-picture-pc{
     margin: 50px 0px;
     width: 100%;
 }
@@ -31,16 +31,18 @@ main {
         0px 3px 3px #000, 0px -3px 3px #000;
     text-align: right;
     /* スライドとの間の空白 */
-    margin-bottom: 380px;
+    margin-bottom: 110px;
     padding-top: 150px;
     padding-right: 100px;
+    padding-bottom: 130px;
+
 }
 
 .new_banner_text1 {
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     text-shadow: 4px 4px 0 rgb(3, 1, 44);
-    text-decoration: underline #4114a8;
+    /* text-decoration: underline #4114a8; */
 }
 
 .new_banner_text1 span {
@@ -119,12 +121,28 @@ hr {
 #toppng {
     margin: 50px 0px;
 }
+/* HF24の強み */
+
+.strength{
+    background-image: url("../image/franchise/strengths1-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.strength h1{
+    color: #fff;
+    font-size: 4vw;
+    margin-bottom: 100px;
+    padding-right: 180px;
+}
+
+/* HF24の強み */
 
 .area-sp {
     padding: 0.3em 0;
     font-size: 1.5em;
     color: #333;
-    /* border-top: 2px solid #777; */
     border-bottom: 2px solid rgb(192, 192, 192);
 }
 .colum{
@@ -224,6 +242,7 @@ hr {
 
 .area-pc {
     width: 25%;
+    display: flex;
 }
 
 /* FC展開中 */
@@ -594,6 +613,7 @@ a:active {
     font-weight: bold;
     text-align: left;
     display: inline-block;
+    font-size: 18px;
 }
 
 
@@ -825,6 +845,12 @@ a:active {
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+    
+
+    .covid-picture-pc{
+        display: none;
+    }
+
     .new_top_banner {
         background-size: 1200px;
 
@@ -835,7 +861,7 @@ a:active {
         padding-top: 0px;
         padding-right: 0px;
         /* スライドとの空白 */
-        margin-bottom: 80px;
+        margin-bottom: 0px;
 
     }
 
@@ -898,6 +924,9 @@ a:active {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
+    .covid-picture-sp{
+        display: none;
+    }
     .br-sp {
         display: none;
     }
