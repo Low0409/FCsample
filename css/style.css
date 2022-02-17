@@ -125,18 +125,51 @@ hr {
 
 .strength{
     background-image: url("../image/franchise/strengths1-bg.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    background-size: cover;
+    background-position: top
+    ;}
 
 .strength h1{
     color: #fff;
     font-size: 4vw;
-    margin-bottom: 100px;
-    padding-right: 180px;
+    margin-bottom: 5vmax;
+    padding-right: 230px;
+    /* color: rgb(187, 178, 58); */
+    color: #FF7C00;
+    background: -webkit-linear-gradient(top, #FFB76B 0%, #FFA73D 50%, #FF7C00 51%, #FF7F04 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+.achievement-div{
+    margin-top: 20vmax;
+    color: rgba(227, 179, 29);
+    background: rgba(255, 255, 255, 0.5);
 
+}
+.ranking-text{
+    color: #fff;
+}
+.achievement{
+    color: rgb(44, 44, 44);
+    text-align: left;
+    font-size: clamp(1.0rem, 2.5vw, 4.0rem);
+}
+.Silver{
+    color: silver;
+    font-size: clamp(2.0rem, 3.0vw, 5.0rem);
+    text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
+        -3px 3px 3px #000, 3px -3px 3px #000,
+        3px 0px 3px #000, -3px -0px 3px #000,
+        0px 3px 3px #000, 0px -3px 3px #000;
+}
+.Gold{
+    color: gold;
+    font-size: clamp(2.0rem, 3.0vw, 5.0rem);
+    text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
+        -3px 3px 3px #000, 3px -3px 3px #000,
+        3px 0px 3px #000, -3px -0px 3px #000,
+        0px 3px 3px #000, 0px -3px 3px #000;
+}
 /* HF24の強み */
 
 .area-sp {
@@ -149,7 +182,9 @@ hr {
     margin-right: 30px;
 
 }
-
+.colum-detail{
+    margin-top: 15px;
+}
 .heading-red-underbar {
     color: red;
     margin-bottom: 40px;
@@ -171,19 +206,22 @@ hr {
 /* 基本戦略・コンセプト */
 .concept{
     padding-left: 15%;
+    margin-top: 60px;
 }
 .concept-text{
     font-size:calc(0.8em + 1vw);
     float: left;
-    background: linear-gradient(#ffffff, #c2c2c2);
+    background: linear-gradient(#ffffff, #e6e6e6);
     padding: left 80%;
     border-radius: 5px;
     padding: 2px;
 }
+
 .v-text{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-    background: linear-gradient(#05FBFF, #1E00FF);
+    /* background: linear-gradient(#05FBFF, #1E00FF); */
+    background: linear-gradient(#6883ff, #1E00FF);
     border-radius: 10px;
     padding: 10px;
     color: #fff;
@@ -840,12 +878,16 @@ a:active {
     .colum{
         margin-right: 10px;
     }
-
+    .achievement-div{
+        margin-top: 70px;
+    }
 }
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
-    
+    .strength{
+        background-size: contain;
+    }
 
     .covid-picture-pc{
         display: none;
