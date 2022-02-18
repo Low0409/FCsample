@@ -12,6 +12,10 @@ main {
 .width100{
     width: 100%;
 }
+.underbar{
+    margin-bottom: 4vmax;
+    font-size: clamp(2vmax, 2.5vmax, 3vmax);
+}
 /* 新バージョン */
 /* gitテスト */
 .new_top_banner {
@@ -623,12 +627,12 @@ a:active {
 
 /* 帯見出し */
 .heading-blue {
-    margin: 50px 0px;
+    margin: 5vmax 0px;
     color: #dfdfdf;
     background: #3a0a95;
-    font-size: 24pt;
-    line-height: 1;
-    padding: 10px 5px 10px 20px;
+    font-size: 3em;
+    line-height: 0.2;
+    padding: 25px 10px;
     box-shadow: 1px 3px 7px 0px #666666;
     border-top: 3px solid #474cfe;
 
@@ -638,7 +642,6 @@ a:active {
 .heading-blue:after, sample2:before {
     content: "";
     position: absolute;
-    top: 100%;
     height: 0;
     width: 0;
     border: 5px solid transparent;
@@ -782,7 +785,11 @@ a:active {
 .text-contact {
     margin: 30px 0px;
 }
-
+.TEL-text{
+    margin:0px;
+    padding: 0px;
+    letter-spacing: 3px;
+}
 
 /* 新ボタン0218 */
 @import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
@@ -819,7 +826,9 @@ a.btn-custom01 {
   border-radius: 0.75rem;
   margin-bottom: 8vmax;
 }
-
+a.btn-custom01:last-child{
+    font-size: 3rem;
+}
 a.btn-custom01:before {
   position: absolute;
   top: 0;
