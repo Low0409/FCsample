@@ -83,9 +83,9 @@
 
             <p class="ranking-text-pc">MY BESTスポーツジムのおすすめ人気ランキング30選
                 【2021年最新版】で、大手総合ジム・24時間ジム様を抑えて顧客満足度総合第1位に選ばれました。<br />
-                MY BEST = 月間1500万人のVIEWがある商品比較ランキングサイト<br /><a
-                    href="https://my-best.com/10247" class="ranking-site-link">https://my-best.com/10247</a></p>
-                    
+                MY BEST = 月間1500万人のVIEWがある商品比較ランキングサイト<br /><a href="https://my-best.com/10247"
+                    class="ranking-site-link">https://my-best.com/10247</a></p>
+
         </div>
         <p class="ranking-text-sp">MY BESTスポーツジムのおすすめ人気ランキング30選
             【2021年最新版】で、大手総合ジム・24時間ジム様を抑えて顧客満足度総合第1位に選ばれました。<br />
@@ -100,7 +100,7 @@
         <a class="btn btn-custom01" href="https://google.com">
             <span class="btn-custom01-front">FC資料請求/お問い合わせフォーム</span>
             <i class="fas fa-angle-right fa-position-right"></i>
-          </a>
+        </a>
         <!-- ボタン変更 -->
         <!-- お問合せはこちら -->
         <div class="top-banner2">
@@ -273,10 +273,12 @@
         <p class="p-text">安心して会員様に利用して頂ける設備を目指し、様々な対策を実施しております。<br />FC加盟店様にも共有して頂ける体制を整えております。</p>
 
         <!-- スマホタブレット用画像991以下 -->
-        <img src="./image/franchise/covid19-phone1.png" class="covid-picture-sp" alt="コロナウイルス感染予防への取組み携帯用">
-        <img src="./image/franchise/covid19-phone2.png" class="covid-picture-sp" alt="コロナウイルス感染予防への取組み携帯用">
+        <!-- <img src="./image/franchise/covid19-phone1.png" class="covid-picture-sp" alt="コロナウイルス感染予防への取組み携帯用">
+        <img src="./image/franchise/covid19-phone2.png" class="covid-picture-sp" alt="コロナウイルス感染予防への取組み携帯用"> -->
+        <img src="./image/franchise/covid-phone.png" class="covid-picture-sp" alt="コロナウイルス感染予防への取組み携帯用">
+
         <!-- PC用画像 -->
-        <img src="image/franchise/covid19.PNG" class="covid-picture-pc" alt="コロナウイルス感染予防への取組みPC用">
+        <img src="image/franchise/covid19-2.png" class="covid-picture-pc" alt="コロナウイルス感染予防への取組みPC用">
 
 
         <h2 class="underbar"><span class="underbar-Span JS_ScrollAnimationItem">高収益を生み出す秘密</span></h2>
@@ -360,14 +362,21 @@
                     <p class="name ws_pl_sp">株式会社 SUNMUSIC SYSTEM ALL TIME FITNESS FC営業本部<br>FC専用お問合せ窓口</p>
                     <div class="fl-box">
                         <div class="fl-block">
-                            <a href="tel:0749-64-2219" class="more-btn">電話:0749-64-2219</a>
-                            <!-- <p class="tap">※番号をタップするだけで電話をかけることができます。</p> -->
-                            <p class="contact-time">電話での受付可能時間/平日 10:00～18:00 </p>
+
+                            <!-- ボタン変更 -->
+                            <a class="btn btn-custom01" href="https://google.com">
+                                <span class="btn-custom01-front">FC資料請求/お問い合わせフォーム</span>
+                                <i class="fas fa-angle-right fa-position-right"></i>
+                            </a>
+                            <!-- ボタン変更 -->
+
                         </div>
                         <br class="area-pc" />
 
                         <div class="fl-block">
-                            <a class="more-btn" href="/Franchise/Entry/" target="_blank">FC資料請求・お問い合わせフォーム</a>
+                            <a href="tel:0749-64-2219" class="more-btn">電話:0749-64-2219</a>
+                            <!-- <p class="tap">※番号をタップするだけで電話をかけることができます。</p> -->
+                            <p class="contact-time">電話での受付可能時間/平日 10:00～18:00 </p>
                         </div>
                     </div>
                     <div class="attention">
@@ -393,9 +402,14 @@
     const swiper = new Swiper('.swiper', {
         autoplay: {
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         loop: true,
         speed: 1000,
     });
+
     // underbarAnimation
     $(window).on('scroll', function () {
 
