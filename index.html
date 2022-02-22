@@ -22,34 +22,31 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
-    <!-- tuika -->
-    <!-- tuika -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
         // 動きのきっかけとなるアニメーションの名前を定義
         function fadeAnime() {
 
-            $('.fadeUpTrigger').each(function () { //fadeUpTriggerというクラス名が
-                var elemPos = $(this).offset().top - 50;//要素より、50px上の
+            $('.fadeUpTrigger').each(function () {
+                var elemPos = $(this).offset().top - 50;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
                 if (scroll >= elemPos - windowHeight) {
-                    $(this).addClass('fadeUp');// 画面内に入ったらfadeUpというクラス名を追記
+                    $(this).addClass('fadeUp');
                 } else {
-                    $(this).removeClass('fadeUp');// 画面外に出たらfadeUpというクラス名を外す
+                    $(this).removeClass('fadeUp');
                 }
             });
         }
-        // 画面をスクロールをしたら動かしたい場合の記述
         $(window).scroll(function () {
-            fadeAnime();/* アニメーション用の関数を呼ぶ*/
-        });// ここまで画面をスクロールをしたら動かしたい場合の記述
+            fadeAnime();
+        });
 
-        // 画面が読み込まれたらすぐに動かしたい場合の記述
+
         $(window).on('load', function () {
-            fadeAnime();/* アニメーション用の関数を呼ぶ*/
-        });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+            fadeAnime();
+        });
 
     </script>
 </head>
@@ -64,16 +61,18 @@
     <div id="page-index">共通page-index</div>
     <main>
         <div class="new_top_banner">
-            <div class="new_top_banner_text">
+            <div class="top_banner_div">
+                <div class="sub-title-div">
+                    <h2 class="sub-title">健康と体力づくりの事業で社会貢献できる<br class="br-sp">フットネス事業を立ち上げてみませんか？</h2>
+                </div>
                 <h1 class="new_banner_text1 fadeUpTrigger">フランチャイズ<br />加盟店<span>募集!</span></h1>
             </div>
         </div>
 
-        <!-- スライドショー -->
         <div class="slide">&nbsp;
 
         </div>
-        <!-- スライドショー -->
+
         <ul class="slider">
             <li><img src="./image/franchise/slide1.png" alt="スライド画像1"></li>
             <li><img src="./image/franchise/slide2.png" alt="スライド画像2"></li>
@@ -83,7 +82,7 @@
             <li><img src="./image/franchise/slide6.jpg" alt="スライド画像6"></li>
         </ul>
 
-        <div class="top-banner1 fadeUp">
+        <!-- <div class="top-banner1 fadeUp">
             <h3>健康と体力づくりの事業で社会貢献できる</h3>
             <div class="bg-woman">
                 <div class="light-blue-div-parent">
@@ -96,27 +95,21 @@
             </div>
             <h2>フットネス事業を立ち上げてみませんか？</h2>
             <h1 class="banner-heading-red">未経験でも始められるフランチャイズです!</h1>
-        </div>
-        <!-- <div class="Quiztion">
-            <div class="fadeUpTrigger box1">
-                <div class="kakomi-tape4"><span class="title-tape4">こんな方にオススメ</span><h3>店舗に空きスペースがある方</h3></div>
-            </div>
-            <div class="fadeUpTrigger box2">
-                <div class="kakomi-tape4"><span class="title-tape4">こんな方にオススメ</span><h3>新規事業をお探しの方</h3></div>
-            </div>
-            <div class="fadeUpTrigger box3">
-                <div class="kakomi-tape4"><span class="title-tape4">こんな方にオススメ</span><h3>業種転換を検討されている方</h3></div>
-            </div>
         </div> -->
-        <div class="kakomi-tape4 fadeUpTrigger ani1"><span class="title-tape4">こんな方にオススメ</span>
-            <h2>店舗に空きスペースがある方</h2>
+        <div class="businessPlan-div">
+            <h1 class="plan-intro-header">利益が見込めるフットネス事業プランがあります。</h1>
+            <div class="kakomi-tape4"><span class="title-tape4">こんな方にオススメ</span>
+                <h2>✅店舗に空きスペースがある方</h2>
+            </div>
+            <div class="kakomi-tape4"><span class="title-tape4">こんな方にオススメ</span>
+                <h2>✅新規事業をお探しの方</h2>
+            </div>
+            <div class="kakomi-tape4"><span class="title-tape4">こんな方にオススメ</span>
+                <h2>✅業種転換を検討されている方</h2>
+            </div>
+            <h1 class="banner-heading-red">未経験でも始められるフランチャイズです!</h1>
         </div>
-        <div class="kakomi-tape4 fadeUpTrigger ani2"><span class="title-tape4">こんな方にオススメ</span>
-            <h2>新規事業をお探しの方</h2>
-        </div>
-        <div class="kakomi-tape4 fadeUpTrigger ani3"><span class="title-tape4">こんな方にオススメ</span>
-            <h2>業種転換を検討されている方</h2>
-        </div>
+
 
 
         <!-- texttop-banner1 -->
@@ -487,33 +480,86 @@
     });
     // underbarAnimation
     // ScrollReveal
-
-    ScrollReveal().reveal('.title-tape4', {
-        origin: 'left', //左から
-        distance: '500px', //500px移動
-        rotate: { x: 0, y: 0, z: 500 }, // 回転
-        reset: true   // 何回もアニメーション表示
+    ScrollReveal().reveal('.kakomi-tape4', {
+        delay: 0, // アニメーション開始までの時間
+        duration: 1000, // アニメーション完了にかかる時間
+        scale: 0.1, // 表示前のサイズ 0.1　なら 0.1倍
+        reset: true // フレームインの度に動かすか
     });
-    ScrollReveal().reveal('.concept',{
-        origin: 'left', //左から
-        distance: '500px', //500px移動
-        rotate: { x: 0, y: 0, z: 500 }, // 回転
+    ScrollReveal().reveal('.title-tape4', {
+        origin: 'left',
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 500 },
+        reset: true,
+        delay: 800,
+    });
+    ScrollReveal().reveal('.concept', {
+        origin: 'left',
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 500 },
         reset: false
     });
-    ScrollReveal().reveal('#flowdiv', {
-        origin: 'left', //左から
-        distance: '500px', //500px移動
-        rotate: { x: 0, y: 0, z: 500 }, // 回転
+    ScrollReveal().reveal('.flow', {
+        origin: 'left',
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
         reset: false,
         duration: 1500
     });
     ScrollReveal().reveal('.facility', {
-        origin: 'left', //左から
-        distance: '500px', //500px移動
-        rotate: { x: 0, y: 0, z: 500 }, // 回転
-        reset: false,
+        origin: 'left',
+        distance: '500px',
+        rotate: { x: 500, y: 0, z: 0 },
+        reset: true,
         duration: 1500
     });
+    ScrollReveal().reveal('.sub-title', {
+        origin: 'left',
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
+        reset: true,
+        duration: 1500
+    });
+    ScrollReveal().reveal('.row', {
+        origin: 'right',
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
+        reset: true,
+        duration: 1500
+    });
+    ScrollReveal().reveal('.FCextending-div', {
+        origin: 'right',
+        scale: 0.1,
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
+        reset: true,
+        duration: 1500
+    });
+    ScrollReveal().reveal('.distribution', {
+        origin: 'left',
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
+        reset: true,
+        duration: 1500
+    });
+
+    ScrollReveal().reveal('.covid-picture-sp', {
+        origin: 'right',
+        scale: 0.1,
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
+        reset: true,
+        duration: 1500
+    });
+    ScrollReveal().reveal('.covid-picture-pc', {
+        origin: 'right',
+        scale: 0.1,
+        distance: '500px',
+        rotate: { x: 0, y: 0, z: 0 },
+        reset: true,
+        duration: 1500
+    });
+
         // ScrollReveal
 </script>
 
