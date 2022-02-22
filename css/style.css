@@ -1,3 +1,101 @@
+/* アニメーション */
+
+@charset "utf-8";
+
+/*========= レイアウトのためのCSS ===============*/
+
+.wrapper {
+    overflow: hidden;
+}
+
+
+/* fadeUp */
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slideIn {
+    animation-name: slideinAnime;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideinAnime {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+
+.slideInTrigger {
+    opacity: 0;
+}
+
+/* 店舗に空きスペースがある方 */
+.box1 {
+    animation-duration: 1.0s;
+    width: 33%;
+    border: solid 1px #ccc;
+}
+
+/* 新規事業をお探しの方 */
+.box2 {
+    animation-duration: 1.5s;
+    width: 33%;
+    border: solid 1px #ccc;
+
+}
+
+/* 業種転換を検討されている方 */
+.box3 {
+    animation-duration: 2.0s;
+    width: 33%;
+    border: solid 1px #ccc;
+}
+
+.ani1 {
+    animation-duration: 1.0s;
+}
+
+.ani2 {
+    animation-duration: 1.5s;
+}
+
+.ani3 {
+    animation-duration: 2.0s;
+}
+
+.ani4 {
+    animation-duration: 2.5s;
+}
+
+/* アニメーション */
+
+
 main {
     background-color: rgb(241, 241, 241);
 }
@@ -5,17 +103,21 @@ main {
 .FCimg {
     margin: 50px 0px;
 }
-.covid-picture-pc{
+
+.covid-picture-pc {
     margin: 50px 0px;
     width: 75%;
 }
-.width100{
+
+.width100 {
     width: 100%;
 }
-.underbar{
+
+.underbar {
     margin-bottom: 4vmax;
     font-size: clamp(2vmax, 2.5vmax, 3vmax);
 }
+
 /* 新バージョン */
 /* gitテスト */
 .new_top_banner {
@@ -59,7 +161,7 @@ main {
     display: inline-block;
     /* border: 7px solid #ff0000; */
     border-radius: 20%;
-    padding-left:10px;
+    padding-left: 10px;
 }
 
 /* 新バージョン */
@@ -113,10 +215,14 @@ hr {
 }
 
 .Q {
-    font-weight:900;
+    font-weight: 900;
 }
 
 /* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
+.Quiztion {
+    display: flex;
+    margin: 30px 0px;
+}
 
 .top-banner2 {
     width: 100%;
@@ -126,15 +232,16 @@ hr {
 #toppng {
     margin: 50px 0px;
 }
+
 /* HF24の強み */
 
-.strength{
+.strength {
     background-image: url("../image/franchise/strengths1-bg.jpg");
     background-size: cover;
-    background-position: top
-    ;}
+    background-position: top;
+}
 
-.strength h1{
+.strength h1 {
     color: #fff;
     font-size: 4vw;
     margin-bottom: 5vmax;
@@ -145,29 +252,34 @@ hr {
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
 }
-.achievement-div{
+
+.achievement-div {
     margin-top: 20vmax;
     color: rgba(227, 179, 29);
     background: rgba(255, 255, 255, 0.7);
     padding-left: 10px;
 }
-.ranking-text-pc{
+
+.ranking-text-pc {
     color: #fff;
 }
 
-.ranking-site-link{
+.ranking-site-link {
     color: #fff;
 }
-.ranking-site-link:hover{
+
+.ranking-site-link:hover {
     color: rgb(189, 189, 189);
 }
-.achievement{
+
+.achievement {
     color: rgb(0, 0, 0);
     text-align: left;
     font-size: clamp(1.2rem, 2.5vw, 4.0rem);
     font-weight: bold;
 }
-.Silver{
+
+.Silver {
     color: silver;
     font-size: clamp(1.6rem, 3.0vw, 5.0rem);
     text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
@@ -175,7 +287,8 @@ hr {
         3px 0px 3px #000, -3px -0px 3px #000,
         0px 3px 3px #000, 0px -3px 3px #000;
 }
-.Gold{
+
+.Gold {
     color: gold;
     font-size: clamp(1.6rem, 3.0vw, 5.0rem);
     text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
@@ -183,23 +296,28 @@ hr {
         3px 0px 3px #000, -3px -0px 3px #000,
         0px 3px 3px #000, 0px -3px 3px #000;
 }
+
 /* HF24の強み */
-.contact-here{
+.contact-here {
     padding: 4vmax 0vmax 2vmax 0vmax;
 }
+
 .area-sp {
     padding: 0.3em 0;
     font-size: 1.5em;
     color: #333;
     border-bottom: 2px solid rgb(192, 192, 192);
 }
-.colum{
+
+.colum {
     margin-right: 30px;
 
 }
-.colum-detail{
+
+.colum-detail {
     margin-top: 15px;
 }
+
 .heading-red-underbar {
     color: red;
     margin-bottom: 40px;
@@ -218,13 +336,15 @@ hr {
     text-align: center;
     margin-bottom: 40px;
 }
+
 /* 基本戦略・コンセプト */
-.concept{
+.concept {
     padding-left: 15%;
     margin-top: 60px;
 }
-.concept-text{
-    font-size:calc(0.8em + 1vw);
+
+.concept-text {
+    font-size: calc(0.8em + 1vw);
     float: left;
     background: linear-gradient(#ffffff, #e6e6e6);
     padding: left 80%;
@@ -232,7 +352,7 @@ hr {
     padding: 2px;
 }
 
-.v-text{
+.v-text {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     /* background: linear-gradient(#05FBFF, #1E00FF); */
@@ -240,20 +360,24 @@ hr {
     border-radius: 10px;
     padding: 10px;
     color: #fff;
-    font-size:calc(0.8em + 1vw);
+    font-size: calc(0.8em + 1vw);
     margin-top: 10px;
 }
-.h-text{
+
+.h-text {
     font-size: 1.5em;
 }
+
 .row {
     display: flex;
     margin-bottom: 50px;
-  }
-  .col { 
+}
+
+.col {
     width: 100%;
     height: 100px;
-  }
+}
+
 /* 基本戦略・コンセプト */
 
 /* FC展開中 */
@@ -289,16 +413,44 @@ hr {
 .distribution {
     display: flex;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .area-pc {
-    width: 25%;
-    display: flex;
+    width: 100%;
+
 }
 
 /* FC展開中 */
+/* 高収益を生み出す秘密 */
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box {
+    padding: 4vw 0vw;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgb(51, 50, 50);
+    box-sizing: border-box;
+    background-image: url("../image/franchise/method/business.jpg");
+    background-size: cover;
+    text-align: center;
+}
+#img1{
+    /* background-image: url("../image/franchise/method/machine.jpg"); */
+}
+#img2{
+
+}
+#img3{
+
+}
+#img4{
+
+}
+/* 高収益を生み出す秘密 */
 
 /* お問合せdiv */
 .attention {
@@ -499,26 +651,7 @@ a.more-btn {
 }
 
 
-/*========= レイアウトのためのCSS ===============*/
 
-body {
-    background: #eee;
-}
-
-h2, p {
-    text-align: center;
-    padding: 20px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    color: #333;
-}
 
 a:hover,
 a:active {
@@ -591,17 +724,10 @@ a:active {
     margin: auto;
 }
 
-.box_inner {
-    margin-bottom: 30px;
-    /* background-color: #bfcfff; */
-}
 
 /* 秘訣 */
 /* 妥協 */
-.box {
-    position: relative;
 
-}
 
 
 
@@ -630,7 +756,7 @@ a:active {
     margin: 5vmax 0px;
     color: #dfdfdf;
     background: #3a0a95;
-    font-size: 3em;
+    font-size: clamp(2.2rem, 2.5vw, 4.0rem);
     line-height: 0.2;
     padding: 25px 10px;
     box-shadow: 1px 3px 7px 0px #666666;
@@ -785,8 +911,9 @@ a:active {
 .text-contact {
     margin: 30px 0px;
 }
-.TEL-text{
-    margin:0px;
+
+.TEL-text {
+    margin: 0px;
     padding: 0px;
     letter-spacing: 3px;
 }
@@ -799,127 +926,130 @@ a:active {
 .btn,
 a.btn,
 button.btn {
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
 }
 
 a.btn-custom01 {
     font-size: 2.4rem;
-  margin-bottom: 0.5rem;
-  padding: 0;
-  border-radius: 0.75rem;
-  margin-bottom: 8vmax;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    border-radius: 0.75rem;
+    margin-bottom: 8vmax;
 }
-a.btn-custom01:last-child{
+
+a.btn-custom01:last-child {
     font-size: 3rem;
 }
+
 a.btn-custom01:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  content: "";
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-transform: translate3d(0, 0.75rem, -1rem);
-  transform: translate3d(0, 0.75rem, -1rem);
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translate3d(0, 0.75rem, -1rem);
+    transform: translate3d(0, 0.75rem, -1rem);
 
-  border: 2px solid #000;
-  border-radius: inherit;
-  background: #15b4b9;
-  -webkit-box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #000;
+    border-radius: inherit;
+    background: #15b4b9;
+    -webkit-box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
 }
 
 a.btn-custom01:after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 1;
-  position: absolute;
-  top: calc(50% - 1rem);
-  left: 1.5rem;
-  margin: 0;
-  padding: 0;
-  content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: 1.5rem;
+    margin: 0;
+    padding: 0;
+    content: "\f0e0";
 }
 
 .btn-custom01-front {
-  position: relative;
-  display: block;
-  padding: 1.5rem 5rem 1.5rem 5rem;
+    position: relative;
+    display: block;
+    padding: 1.5rem 5rem 1.5rem 5rem;
 
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 2px solid #000;
-  border-radius: inherit;
-  background: #54f4fa;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 2px solid #000;
+    border-radius: inherit;
+    background: #54f4fa;
 }
 
 .fa-position-left {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  left: 1rem;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    left: 1rem;
 }
 
 .fa-position-right {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  right: 1rem;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    right: 1rem;
 }
 
 a.btn-custom01:hover {
-  -webkit-transform: translate(0, 0.25rem);
-  transform: translate(0, 0.25rem);
+    -webkit-transform: translate(0, 0.25rem);
+    transform: translate(0, 0.25rem);
 }
 
 a.btn-custom01:hover:before {
-  -webkit-transform: translate3d(0, 0.5rem, -1rem);
-  transform: translate3d(0, 0.5rem, -1rem);
-  -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate3d(0, 0.5rem, -1rem);
+    transform: translate3d(0, 0.5rem, -1rem);
+    -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
 }
 
 a.btn-custom01:hover:after {
-  content: "\f2b6";
+    content: "\f2b6";
 }
 
 a.btn-custom01:active {
-  -webkit-transform: translate(0rem, 0.75rem);
-  transform: translate(0rem, 0.75rem);
+    -webkit-transform: translate(0rem, 0.75rem);
+    transform: translate(0rem, 0.75rem);
 }
 
 a.btn-custom01:active:before {
-  -webkit-transform: translate3d(0, 0, -1rem);
-  transform: translate3d(0, 0, -1rem);
-  -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate3d(0, 0, -1rem);
+    transform: translate3d(0, 0, -1rem);
+    -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
 }
 
 a.btn-custom01:active:after {
-  content: "\f2b6";
+    content: "\f2b6";
 }
+
 /* 新ボタン0218 */
 
 /* お問合せフォーム */
@@ -941,9 +1071,13 @@ a.btn-custom01:active:after {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
-    .strength{
+    .box {
+        width: 100%;
+    }
+    .strength {
         background-size: cover;
     }
+
     .area-pc {
         font-size: 10px;
     }
@@ -975,40 +1109,49 @@ a.btn-custom01:active:after {
     .FCextending-div {
         height: 200px;
     }
+
     /* お問合せボタン縦並び */
-    .fl-box{
-        justify-content:flex-end;
+    .fl-box {
+        justify-content: flex-end;
         flex-flow: column;
     }
-    .colum{
+
+    .colum {
         margin-right: 10px;
     }
-    .achievement-div{
+
+    .achievement-div {
         margin-top: 70px;
     }
 }
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
-    .achievement-div{
+    .achievement-div {
         padding-left: 0px;
     }
+
     a.btn-custom01 {
         font-size: 1.5rem;
     }
-    .achievement-div{
+
+    .achievement-div {
         margin-top: 270px;
     }
-    .strength{
+
+    .strength {
         background-size: cover;
     }
-    .strength h1{
+
+    .strength h1 {
         margin-top: 50px;
     }
-    .ranking-text-pc{
+
+    .ranking-text-pc {
         display: none;
     }
-    .covid-picture-pc{
+
+    .covid-picture-pc {
         display: none;
     }
 
@@ -1051,11 +1194,6 @@ a.btn-custom01:active:after {
 
 
 
-    .box_inner {
-        padding-left: 10%;
-
-    }
-
     .flow {
         font-size: 20px;
     }
@@ -1067,7 +1205,8 @@ a.btn-custom01:active:after {
     .bg_text {
         padding: 0px 0px 50px 50px;
     }
-    .concept{
+
+    .concept {
         padding-left: 10px;
     }
 }
@@ -1085,12 +1224,14 @@ a.btn-custom01:active:after {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
-    .ranking-text-sp{
+    .ranking-text-sp {
         display: none;
     }
-    .covid-picture-sp{
+
+    .covid-picture-sp {
         display: none;
     }
+
     .br-sp {
         display: none;
     }
@@ -1146,16 +1287,18 @@ a.btn-custom01:active:after {
         margin-right: auto;
         font-size: 20px;
     }
+
     .FCextending-div {
         background-size: contain;
     }
 }
 
 @media (max-width: 535px) {
-    .achievement-div{
+    .achievement-div {
         margin-top: 13vmax;
     }
-    .concept{
+
+    .concept {
         padding-left: 0px;
     }
 }
