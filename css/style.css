@@ -55,27 +55,7 @@
     opacity: 0;
 }
 
-/* 店舗に空きスペースがある方 */
-.box1 {
-    animation-duration: 1.0s;
-    width: 33%;
-    border: solid 1px #ccc;
-}
 
-/* 新規事業をお探しの方 */
-.box2 {
-    animation-duration: 1.5s;
-    width: 33%;
-    border: solid 1px #ccc;
-
-}
-
-/* 業種転換を検討されている方 */
-.box3 {
-    animation-duration: 2.0s;
-    width: 33%;
-    border: solid 1px #ccc;
-}
 
 .ani1 {
     animation-duration: 1.0s;
@@ -118,8 +98,6 @@ main {
     font-size: clamp(2vmax, 2.5vmax, 3vmax);
 }
 
-/* 新バージョン */
-/* gitテスト */
 .new_top_banner {
     background-image: url("../image/franchise/newFC_thubnail.jpg");
     background-size: auto;
@@ -218,6 +196,56 @@ hr {
     font-weight: 900;
 }
 
+
+
+/*　テープ　枠　4 */
+.kakomi-tape4 {
+    position:relative;
+    padding: 35px 20px 20px;
+    margin: 2.5em auto;
+    width: 90%;
+    color: #555555; /* 文字色 */
+    background-color: #caffff; /*BOX背景色*/ 
+    box-shadow: 0 2px 5px #999;
+   }
+   .kakomi-tape4 h2{
+       /* color: white; */
+   }
+   .title-tape4 {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    padding: 8px 40px;
+    color: #555555; /*タイトル色*/
+    font-weight: bold;
+    background-color: rgba(255,255,255,.1);
+    border-left: 2px dotted rgba(0,0,0,.1);
+    border-right: 2px dotted rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+    transform: rotate(-3deg);
+    color: rgb(71, 70, 70);
+    font-size: 25px;
+    color: rgb(255, 103, 103);
+   }
+
+   /* 店舗に空きスペースがある方 */
+.box1 {
+    animation-duration: 1.0s;
+    width: 33%;
+}
+
+/* 新規事業をお探しの方 */
+.box2 {
+    animation-duration: 1.5s;
+    width: 33%;
+
+}
+
+/* 業種転換を検討されている方 */
+.box3 {
+    animation-duration: 2.0s;
+    width: 33%;
+}
 /* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
 .Quiztion {
     display: flex;
@@ -236,7 +264,7 @@ hr {
 /* HF24の強み */
 
 .strength {
-    background-image: url("../image/franchise/strengths1-bg.jpg");
+    background-image: url("../image/franchise/strengths3-bg.jpg");
     background-size: cover;
     background-position: top;
 }
