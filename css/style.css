@@ -242,6 +242,10 @@ hr {
     border-top-color: white;
     margin-left: -10px;
 }
+.check{
+    width: 60px;
+    height: 60px;
+}
 
 /*　テープ　枠　4 */
 .kakomi-tape4 {
@@ -1144,7 +1148,16 @@ a.btn-custom01:active:after {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
+    .check{
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+    .title-tape4 {
+        padding: 4px 20px;
+        font-size: 18px;
 
+    }
     .box {
         width: 100%;
     }
