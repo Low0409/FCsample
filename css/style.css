@@ -54,7 +54,10 @@
     opacity: 0;
 }
 
-
+.check{
+    width: 60px;
+    height: 60px;
+}
 
 .ani1 {
     animation-duration: 1.0s;
@@ -102,9 +105,12 @@ main {
     background-size: auto;
 
 }
-.sub-title-div{
-    background:rgba(128, 128, 128, 0.5);}
-.sub-title{
+
+.sub-title-div {
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.sub-title {
     /* color: gold; */
     font-size: 2.4vmax;
     background: -webkit-linear-gradient(top, #fbff17 0%, #ffcf31 50%, #f1ef40 51%, #e9c810 100%);
@@ -114,6 +120,7 @@ main {
     padding: 0px;
     margin-bottom: 30px;
 }
+
 .top_banner_div {
     padding-top: 2vw;
     color: #fff;
@@ -128,9 +135,9 @@ main {
     padding-right: 100px;
     padding-bottom: 130px;
     text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
-    -3px 3px 3px #000, 3px -3px 3px #000,
-    3px 0px 3px #000, -3px -0px 3px #000,
-    0px 3px 3px #000, 0px -3px 3px #000;
+        -3px 3px 3px #000, 3px -3px 3px #000,
+        3px 0px 3px #000, -3px -0px 3px #000,
+        0px 3px 3px #000, 0px -3px 3px #000;
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     text-shadow: 4px 4px 0 rgb(3, 1, 44);
@@ -166,45 +173,16 @@ hr {
 }
 
 
-.businessPlan-div{
+.businessPlan-div {
     margin: 6vw 0vw;
 }
 
-/* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
-.top-banner1 {
-    width: 100%;
-    /* text-align: center; */
-    background-color: white;
-    margin: 100px 0px;
-}
-
-.light-blue-div-parent {
-    background-color: rgb(193, 245, 252);
-    text-align: center;
-    display: block;
-    background-image: url("../image/franchise/woman2.png");
-    background-size: 180px;
-}
-
-.light-blue-div-children {
-    text-align: left;
-    display: inline-block;
-}
-
-.banner-heading-red-small {
-    color: crimson;
-    font-weight: 900;
-
-}
 
 .banner-heading-red {
     color: crimson;
     font-size: 4vw;
     font-weight: 900;
-}
-
-.Q {
-    font-weight: 900;
+    padding-bottom: 5vw;
 }
 
 .plan-intro-header {
@@ -214,7 +192,7 @@ hr {
     border-bottom: 5px solid;
     color: black;
     font-weight: bold;
-    font-size:4vw;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -241,50 +219,61 @@ hr {
     border-top-color: rgb(241, 241, 241);
     margin-left: -10px;
 }
-.check{
+
+.check {
     width: 60px;
     height: 60px;
 }
 
 /*　テープ　枠　4 */
 .kakomi-tape4 {
-    position:relative;
+    position: relative;
     padding: 35px 20px 20px;
     margin: 2.5em auto;
     width: 80%;
-    color: #555555; /* 文字色 */
-    /* background-color: #caffff; /*BOX背景色*/  
+    color: #555555;
+    /* 文字色 */
+    /* background-color: #caffff; /*BOX背景色*/
     background-image: url("../image/franchise/bg.png");
     background-color: rgba(255, 255, 255, 0.5);
     background-size: cover;
     /* box-shadow: 0 2px 5px #999; */
     color: white;
-   }
-   .kakomi-tape4 h2{
-       /* color: white; */
-   }
-   .title-tape4 {
+}
+
+.kakomi-tape4 h2 {
+    /* color: white; */
+}
+
+.title-tape4 {
+    text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
+        -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+        0px 1px 0 #FFF, 0-1px 0 #FFF,
+        -1px 0 0 #FFF, 1px 0 0 #FFF;
     position: absolute;
     top: -15px;
     left: 30px;
     padding: 8px 40px;
-    color: #555555; /*タイトル色*/
+    color: #555555;
+    /*タイトル色*/
     font-weight: bold;
-    background-color: rgba(255,255,255,.1);
-    border-left: 2px dotted rgba(0,0,0,.1);
-    border-right: 2px dotted rgba(0,0,0,.1);
-    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+    background-color: rgba(255, 255, 255, .1);
+    border-left: 2px dotted rgba(0, 0, 0, .1);
+    border-right: 2px dotted rgba(0, 0, 0, .1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transform: rotate(-3deg);
     color: rgb(71, 70, 70);
     font-size: 25px;
     color: rgb(255, 0, 0);
-   }
-.target{
+}
+
+.target {
     text-align: left;
     padding-left: 20%;
     color: white;
 }
-   /* 店舗に空きスペースがある方 */
+
+/* 店舗に空きスペースがある方 */
 .box1 {
     animation-duration: 1.0s;
     width: 33%;
@@ -302,6 +291,7 @@ hr {
     animation-duration: 2.0s;
     width: 33%;
 }
+
 /* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
 .Quiztion {
     display: flex;
@@ -341,7 +331,10 @@ hr {
     margin-top: 20vmax;
     color: rgba(227, 179, 29);
     background: rgba(255, 255, 255, 0.7);
-    padding-left: 10px;
+}
+
+.achievement-text {
+    padding-left: 5vw;
 }
 
 .ranking-text-pc {
@@ -492,6 +485,7 @@ hr {
         -3px 3px 0px rgb(255, 255, 255), 3px -3px 0px rgb(255, 255, 255),
         3px 0px 0px rgb(255, 255, 255), -3px -0px 0px rgb(255, 255, 255),
         0px 3px 0px rgb(255, 255, 255), 0px -3px 0px rgb(255, 255, 255);
+    padding-left: 30px;
 }
 
 .distribution {
@@ -509,7 +503,9 @@ hr {
 .flex-box {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
+
 }
 
 .box {
@@ -523,25 +519,29 @@ hr {
     background-size: cover;
     text-align: center;
 }
-#img1{
+
+#img1 {
     background-image: url("../image/franchise/method/machine.png");
 }
-#img2{
+
+#img2 {
     background-image: url("../image/franchise/method/Veinrecognition.png");
 
 }
-#img3{
 
-}
-#img4{
+#img3 {}
+
+#img4 {
     background-image: url("../image/franchise/method/member.jpg");
 
 }
-.text-bg{
+
+.text-bg {
     background: rgba(255, 255, 255, 0.7);
     margin-bottom: 30px;
     font-size: 120%;
 }
+
 /* 高収益を生み出す秘密 */
 
 /* お問合せdiv */
@@ -597,9 +597,7 @@ a.more-btn {
 /* FCオープンまでのながれ */
 
 #flowdiv {
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -1083,6 +1081,11 @@ a.btn-custom01:after {
     content: "\f0e0";
 }
 
+.fas {
+    vertical-align: middle;
+
+}
+
 .btn-custom01-front {
     position: relative;
     display: block;
@@ -1110,6 +1113,7 @@ a.btn-custom01:after {
 a.btn-custom01:hover {
     -webkit-transform: translate(0, 0.25rem);
     transform: translate(0, 0.25rem);
+
 }
 
 a.btn-custom01:hover:before {
@@ -1161,24 +1165,34 @@ a.btn-custom01:active:after {
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
 
-    .padding{
+
+
+    .FCextending-red-text {
+        padding-left: 0px;
+    }
+
+    .padding {
         padding: 0px;
         margin: 0px;
     }
-    .check{
+
+    .check {
         width: 30px;
         height: 30px;
         float: left;
     }
+
     .title-tape4 {
         padding: 4px 20px;
         font-size: 18px;
 
     }
+
     .box {
         width: 100%;
         height: 25%;
     }
+
     .strength {
         background-size: cover;
     }
@@ -1193,22 +1207,6 @@ a.btn-custom01:active:after {
 
     .FCextending-red-text {
         font-size: 30px;
-    }
-
-    .Q {
-        padding-left: 80px;
-    }
-
-    .banner-heading-red-small {
-        padding-left: 60px;
-    }
-
-    .light-blue-div-parent {
-        background-color: rgb(193, 245, 252);
-        text-align: center;
-        display: block;
-        background-image: url("../image/franchise/woman2.png");
-        background-size: 100px;
     }
 
     .FCextending-div {
@@ -1232,13 +1230,19 @@ a.btn-custom01:active:after {
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+    .flex-box {
+        width: 100%;
+    }
+
     .new_banner_text1 {
         padding-right: 0px;
     }
-    .sub-title{
+
+    .sub-title {
         /* color: gold; */
         font-size: 24px;
     }
+
     .achievement-div {
         padding-left: 0px;
     }
@@ -1402,16 +1406,20 @@ a.btn-custom01:active:after {
     .concept {
         padding-left: 0px;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 19px;
     }
-    h2{
+
+    h2 {
         padding: 0px;
     }
-    .target{
+
+    .target {
         padding: 0px;
     }
-    .kakomi-tape4{
+
+    .kakomi-tape4 {
         width: 95%;
     }
 }
