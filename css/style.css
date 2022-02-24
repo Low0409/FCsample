@@ -239,7 +239,7 @@ hr {
 .plan-intro-header:after {
     border: 10px solid;
     border-color: transparent;
-    border-top-color: white;
+    border-top-color: rgb(241, 241, 241);
     margin-left: -10px;
 }
 .check{
@@ -506,26 +506,34 @@ hr {
 }
 
 .box {
-    padding: 8vw 0vw;
+    /* padding: 8vw 0vw; */
+    padding: 2vw 0vw 12vw 0vw;
     width: 50%;
     background: rgba(255, 255, 255, 0.9);
     color: rgb(51, 50, 50);
     box-sizing: border-box;
-    background-image: url("../image/franchise/method/business.jpg");
+    background-image: url("../image/franchise/method/business.png");
     background-size: cover;
     text-align: center;
 }
 #img1{
-    /* background-image: url("../image/franchise/method/machine.jpg"); */
+    background-image: url("../image/franchise/method/machine.png");
 }
 #img2{
+    background-image: url("../image/franchise/method/Veinrecognition.png");
 
 }
 #img3{
 
 }
 #img4{
+    background-image: url("../image/franchise/method/member.jpg");
 
+}
+.text-bg{
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+    font-size: 120%;
 }
 /* 高収益を生み出す秘密 */
 
@@ -1148,6 +1156,10 @@ a.btn-custom01:active:after {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
+    .padding{
+        padding: 0px;
+        margin: 0px;
+    }
     .check{
         width: 30px;
         height: 30px;
@@ -1160,6 +1172,7 @@ a.btn-custom01:active:after {
     }
     .box {
         width: 100%;
+        height: 25%;
     }
     .strength {
         background-size: cover;
