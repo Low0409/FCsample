@@ -14,7 +14,9 @@ p{
     text-align: center;
 }
 
-
+.margin-y{
+    margin:150px 0px 20px 0px;
+}
 .check{
     width: 60px;
     height: 60px;
@@ -265,7 +267,7 @@ hr {
 
 .strength h1 {
     color: #fff;
-    font-size: 4vw;
+    font-size: 4.2vw;
     margin-bottom: 5vmax;
     float: left;
     color: #FF7C00;
@@ -300,7 +302,7 @@ hr {
 .achievement {
     color: rgb(0, 0, 0);
     text-align: left;
-    font-size: clamp(1.2rem, 2.5vw, 4.0rem);
+    font-size: clamp(1.6rem, 2.5vw, 4.0rem);
     font-weight: bold;
 }
 
@@ -485,11 +487,18 @@ hr {
 }
 
 .text-bg {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     margin-bottom: 30px;
     font-size: 120%;
 }
 
+
+.method-sp{
+    padding: 0.3em 0;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid rgb(192, 192, 192);
+}
 /* 高収益を生み出す秘密 */
 
 /* お問合せdiv */
@@ -764,19 +773,16 @@ a:active {
 /* 妥協 */
 
 
-
-
-.box h3 {
+.first-head{
     margin: 0;
     text-align: left;
     margin-right: auto;
 }
 
-.box h3:first-letter {
+.first-head:first-letter{
     font-size: 1.4em;
     color: #131b4b;
 }
-
 .method-text2 {
     margin-right: auto;
     margin: 0;
@@ -791,7 +797,7 @@ a:active {
     margin: 5vmax 0px;
     color: #dfdfdf;
     background: #3a0a95;
-    font-size: clamp(2.2rem, 2.5vw, 4.0rem);
+    font-size: clamp(2.5rem, 2.6vw, 4.2rem);
     line-height: 0.2;
     padding: 25px 10px;
     box-shadow: 1px 3px 7px 0px #666666;
@@ -826,7 +832,7 @@ a:active {
     font-weight: bold;
     text-align: left;
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -1113,8 +1119,16 @@ a.btn-custom01:active:after {
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
 
-
-
+    .concept-text{
+        font-size: 2.9vw;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .v-text{
+        -ms-writing-mode: tb-rl;
+        writing-mode: horizontal-tb;
+    }
     .FCextending-red-text {
         padding-left: 0px;
     }
@@ -1178,6 +1192,20 @@ a.btn-custom01:active:after {
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+
+    .underbar {
+        font-size: 3.9vw;
+    }
+    .method-pc{
+        display: none;
+    }
+    .first-head{
+        font-size: 4vw;
+
+    }
+    .method-text2 {
+        font-size: 2.9vw;
+    }
     .br-pc{
         display: none;
     }
@@ -1292,6 +1320,9 @@ a.btn-custom01:active:after {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
+    .method-sp{
+        display: none;
+    }
     .ranking-text-sp {
         display: none;
     }
@@ -1380,5 +1411,8 @@ a.btn-custom01:active:after {
 @media (max-width: 1250px) {
     .sub-title-div {
         background: rgba(0, 0, 0, 0.5);
+    }
+    .zoom{
+        font-size: 34px;
     }
 }
