@@ -285,7 +285,10 @@ img {
 progress {
   vertical-align: baseline;
 }
-
+p{
+  text-align: center;
+  padding: 20px;
+}
 svg:not(:root) {
   overflow: hidden; /* Internet Explorer 11- */
 }
