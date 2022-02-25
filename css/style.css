@@ -103,22 +103,27 @@ main {
 .new_top_banner {
     background-image: url("../image/franchise/newFC_thubnail.jpg");
     background-size: auto;
-
+    padding-top: 30px;
 }
 
 .sub-title-div {
-    background: rgba(128, 128, 128, 0.5);
+    /* background: rgba(128, 128, 128, 0.5); */
+    padding-top: 5px;
+
 }
 
 .sub-title {
     /* color: gold; */
     font-size: 2.4vmax;
-    background: -webkit-linear-gradient(top, #fbff17 0%, #ffcf31 50%, #f1ef40 51%, #e9c810 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: 900;
     padding: 0px;
     margin-bottom: 30px;
+    padding-left: 40%;
+    color: gold;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.5), -2px -2px 0 rgba(0,0,0,0.5),
+        -2px 2px 0 rgba(0,0,0,0.5), 2px -2px 0 rgba(0,0,0,0.5),
+        0px 2px 0 rgba(0,0,0,0.5), 0-2px 0 rgba(0,0,0,0.5),
+        -2px 0 0 rgba(0,0,0,0.5), 2px 0 0 rgba(0,0,0,0.5);
 }
 
 .top_banner_div {
@@ -142,6 +147,7 @@ main {
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     text-shadow: 4px 4px 0 rgb(3, 1, 44);
     /* text-decoration: underline #4114a8; */
+    line-height: 1.3;
 }
 
 .new_banner_text1 span {
@@ -1230,6 +1236,12 @@ a.btn-custom01:active:after {
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+    .br-pc{
+        display: none;
+    }
+    .sub-title{
+        padding-left: 0px;
+    }
     .flex-box {
         width: 100%;
     }
@@ -1421,5 +1433,10 @@ a.btn-custom01:active:after {
 
     .kakomi-tape4 {
         width: 95%;
+    }
+}
+@media (max-width: 1250px) {
+    .sub-title-div {
+        background: rgba(128, 128, 128, 0.5);
     }
 }
