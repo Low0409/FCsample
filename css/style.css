@@ -197,10 +197,6 @@ hr {
     color: white;
 }
 
-.kakomi-tape4 h2 {
-    /* color: white; */
-}
-
 .title-tape4 {
     text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF,
         -1px 1px 0 #FFF, 1px -1px 0 #FFF,
@@ -502,8 +498,6 @@ hr {
     background-image: url("../image/franchise/method/Veinrecognition.png");
 
 }
-
-#img3 {}
 
 #img4 {
     background-image: url("../image/franchise/method/member.jpg");
@@ -853,15 +847,6 @@ a:active {
     margin-top: 8vw;
 
 }
-
-/* .heading-blue:after, sample2:before {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    border: 5px solid transparent;
-    border-top: 5px solid #333;
-} */
 
 .heading-blue:after {
     left: 0;
