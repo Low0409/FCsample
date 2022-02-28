@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 
@@ -6,18 +5,19 @@
     overflow: hidden;
 }
 
-h2{
+h2 {
     margin-bottom: 0px;
 }
 
-p{
+p {
     text-align: center;
 }
 
-.margin-y{
-    margin:150px 0px 20px 0px;
+.margin-y {
+    margin: 150px 0px 20px 0px;
 }
-.check{
+
+.check {
     width: 60px;
     height: 60px;
 }
@@ -42,6 +42,9 @@ main {
 .underbar {
     margin-bottom: 4vmax;
     font-size: clamp(2vmax, 2.5vmax, 3vmax);
+    font-weight: 900;
+    padding: 20px 0px;
+
 }
 
 .new_top_banner {
@@ -64,7 +67,7 @@ main {
     margin-bottom: 30px;
     padding-left: 40%;
     color: transparent;
-    background: repeating-linear-gradient(0deg, #B67B03 0.1em, #DAAF08 0.2em, #FEE9A0 0.3em, #DAAF08 0.4em, #B67B03 0.5em); 
+    background: repeating-linear-gradient(0deg, #B67B03 0.1em, #DAAF08 0.2em, #FEE9A0 0.3em, #DAAF08 0.4em, #B67B03 0.5em);
     -webkit-background-clip: text;
 
 }
@@ -105,6 +108,8 @@ main {
     font-weight: 900;
 }
 
+
+
 /* 新バージョン */
 
 .slide_show {
@@ -132,7 +137,8 @@ hr {
     color: crimson;
     font-size: 4vw;
     font-weight: 900;
-    padding-bottom: 5vw;
+    padding-bottom:11vw;
+    padding-top: 0px;
 }
 
 .plan-intro-header {
@@ -178,7 +184,7 @@ hr {
 /*　テープ　枠　4 */
 .kakomi-tape4 {
     position: relative;
-    padding: 35px 20px 20px;
+    padding: 35px 0px 20px 0px;
     margin: 2.5em auto;
     width: 80%;
     color: #555555;
@@ -221,6 +227,8 @@ hr {
     text-align: left;
     padding-left: 20%;
     color: white;
+    font-size: clamp(2.8rem, 4.0rem, 4.0rem);
+    font-weight: 900;
 }
 
 /* 店舗に空きスペースがある方 */
@@ -265,7 +273,9 @@ hr {
     background-position: top;
 }
 
-.strength h1 {
+
+
+.CustomerSatisfaction {
     color: #fff;
     font-size: 4.2vw;
     margin-bottom: 5vmax;
@@ -276,7 +286,15 @@ hr {
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
 }
-
+.CustomerSatisfaction-sp {
+    color: rgb(233, 29, 29);
+    font-size: 20px;
+    color: #FF7C00;
+    background: -webkit-linear-gradient(top, #FFB76B 0%, #FFA73D 50%, #FF7C00 51%, #FF7F04 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 10px;
+}
 .achievement-div {
     margin-top: 20vmax;
     color: rgba(227, 179, 29);
@@ -334,6 +352,8 @@ hr {
     font-size: 1.5em;
     color: #333;
     border-bottom: 2px solid rgb(192, 192, 192);
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .colum {
@@ -356,7 +376,8 @@ hr {
     color: rgb(199, 0, 0);
     margin-bottom: 40px;
     text-align: center;
-
+    font-size: 3.5vw;
+    font-weight: 900;
 }
 
 .heading-2 {
@@ -368,6 +389,7 @@ hr {
 .concept {
     padding-left: 15%;
     margin-top: 60px;
+    font-weight: 900;
 }
 
 .concept-text {
@@ -436,6 +458,7 @@ hr {
         3px 0px 0px rgb(255, 255, 255), -3px -0px 0px rgb(255, 255, 255),
         0px 3px 0px rgb(255, 255, 255), 0px -3px 0px rgb(255, 255, 255);
     padding-left: 30px;
+    font-weight: 900;
 }
 
 .distribution {
@@ -445,7 +468,8 @@ hr {
 
 .area-pc {
     width: 100%;
-
+    font-size: 2.5vw;
+    font-weight: 900;
 }
 
 /* FC展開中 */
@@ -493,12 +517,13 @@ hr {
 }
 
 
-.method-sp{
+.method-sp {
     padding: 0.3em 0;
     font-size: 1.5em;
     color: #333;
     border-bottom: 2px solid rgb(192, 192, 192);
 }
+
 /* 高収益を生み出す秘密 */
 
 /* お問合せdiv */
@@ -567,7 +592,7 @@ a.more-btn {
     color: rgb(236, 236, 236);
     background-color: rgb(56, 56, 77);
     font-size: 2vw;
-
+    font-weight: bold;
 }
 
 
@@ -714,6 +739,7 @@ a:active {
     border-radius: 3px;
     box-shadow: 1px 3px 7px 0px #4e5264;
     border-radius: 0%;
+    font-weight: 900;
 }
 
 .case:after, .case:before {
@@ -773,21 +799,43 @@ a:active {
 /* 妥協 */
 
 
-.first-head{
+.first-head {
     margin: 0;
     text-align: left;
     margin-right: auto;
 }
 
-.first-head:first-letter{
+.first-head:first-letter {
     font-size: 1.4em;
     color: #131b4b;
 }
-.method-text2 {
-    margin-right: auto;
-    margin: 0;
-    text-align: left;
-    margin-right: auto;
+.ttlTxtBG {
+    padding-top: 2vw;
+    position:relative;
+    background:#e7e6e6;
+    color:#2c3e50;
+    font-size:2.6rem;
+    text-align:center;
+    z-index:100;
+    overflow:hidden;
+}
+.ttlTxtBG:before {
+    padding-top: 2vw;
+    position:absolute;
+    top:-15px;
+    left:2px;
+    content:"POINT";
+    display:block;
+    color:rgba(000,000,000,0.05);
+    font-family: 'Ubuntu Condensed' sans-serif;
+    font-size:10.0rem;
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+    line-height:1;
+    -webkit-transform:rotate(-13deg);
+    -moz-transform:rotate(-13deg);
+    transform:rotate(-13deg);
+    z-index:-1;
 }
 
 /* 妥協 */
@@ -801,7 +849,8 @@ a:active {
     line-height: 0.2;
     padding: 25px 10px;
     box-shadow: 1px 3px 7px 0px #666666;
-    border-top: 3px solid #474cfe;
+    border-bottom: 3px solid #4e54ff;
+    margin-top: 8vw;
 
 }
 
@@ -1119,16 +1168,23 @@ a.btn-custom01:active:after {
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
 
-    .concept-text{
+
+    .target{
+        font-size: 28px;
+    }
+    .concept-text {
         font-size: 2.9vw;
     }
-    .row{
+
+    .row {
         flex-direction: column;
     }
-    .v-text{
+
+    .v-text {
         -ms-writing-mode: tb-rl;
         writing-mode: horizontal-tb;
     }
+
     .FCextending-red-text {
         padding-left: 0px;
     }
@@ -1139,8 +1195,8 @@ a.btn-custom01:active:after {
     }
 
     .check {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         float: left;
     }
 
@@ -1184,34 +1240,40 @@ a.btn-custom01:active:after {
     .colum {
         margin-right: 10px;
     }
-
     .achievement-div {
-        margin-top: 70px;
+        margin-top: 2vmax;
     }
 }
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+    .kakomi-tape4{
+        width: 100%;
+    }
+    .target {
+        padding-left: 0%;
+    }
 
     .underbar {
         font-size: 3.9vw;
     }
-    .method-pc{
+
+    .method-pc {
         display: none;
     }
-    .first-head{
+
+    .first-head {
         font-size: 4vw;
 
     }
-    .method-text2 {
-        font-size: 2.9vw;
-    }
-    .br-pc{
+    .br-pc {
         display: none;
     }
-    .sub-title{
+
+    .sub-title {
         padding-left: 0px;
     }
+
     .flex-box {
         width: 100%;
     }
@@ -1241,7 +1303,7 @@ a.btn-custom01:active:after {
         background-size: cover;
     }
 
-    .strength h1 {
+    .CustomerSatisfaction {
         margin-top: 50px;
     }
 
@@ -1309,7 +1371,9 @@ a.btn-custom01:active:after {
 
 
 /* 768px以上（タブレット・PC共通） */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+}
 
 /* 768x以上991px以下（タブレット用）*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1320,9 +1384,10 @@ a.btn-custom01:active:after {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
-    .method-sp{
+    .method-sp {
         display: none;
     }
+
     .ranking-text-sp {
         display: none;
     }
@@ -1384,6 +1449,9 @@ a.btn-custom01:active:after {
 }
 
 @media (max-width: 535px) {
+    .CustomerSatisfaction{
+        display: none;
+    }
     .achievement-div {
         margin-top: 13vmax;
     }
@@ -1400,19 +1468,24 @@ a.btn-custom01:active:after {
         padding: 0px;
     }
 
-    .target {
-        padding: 0px;
-    }
-
     .kakomi-tape4 {
         width: 95%;
     }
 }
+
+
+@media (min-width: 536px) {
+    .CustomerSatisfaction-sp{
+        display: none;
+    }
+}
+
 @media (max-width: 1250px) {
     .sub-title-div {
         background: rgba(0, 0, 0, 0.5);
     }
-    .zoom{
+
+    .zoom {
         font-size: 34px;
     }
 }
