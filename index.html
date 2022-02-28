@@ -397,173 +397,173 @@
     <script src="script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
-</body>
-<script>
-    const swiper = new Swiper('.swiper', {
-        autoplay: {
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-        speed: 1000,
-        grabCursor: true
-    });
-
-    // underbarAnimation
-    $(window).on('scroll', function () {
-
-        $(".JS_ScrollAnimationItem").each(function () {
-            var position = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > position - windowHeight) {
-                $(this).addClass('isActive');
-            }
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            speed: 1000,
+            grabCursor: true
         });
-
-    }); $(window).on('scroll', function () {
-
-        $(".JS_ScrollAnimationItem").each(function () {
-            var position = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > position - windowHeight) {
-                $(this).addClass('isActive');
-            }
+    
+        // underbarAnimation
+        $(window).on('scroll', function () {
+    
+            $(".JS_ScrollAnimationItem").each(function () {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight) {
+                    $(this).addClass('isActive');
+                }
+            });
+    
+        }); $(window).on('scroll', function () {
+    
+            $(".JS_ScrollAnimationItem").each(function () {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight) {
+                    $(this).addClass('isActive');
+                }
+            });
+    
         });
-
-    });
-    // underbarAnimation
-    // ScrollReveal
-    ScrollReveal().reveal('.new_banner_text1', {
-        origin: 'bottom',
-        distance: '400px',
-        delay: 0,
-        rotate: { x: 0, y: 0, z: 500 },
-        duration: 2000,
-        scale: 0.1,
-        reset: false,
-    });
-    ScrollReveal().reveal('.kakomi-tape4', {
-        delay: 0,
-        duration: 1000,
-        scale: 0.1,
-        reset: true
-    });
-    ScrollReveal().reveal('.title-tape4', {
-        origin: 'left',
-        distance: '500px',
-        rotate: { x: 0, y: 0, z: 500 },
-        reset: true,
-        delay: 800,
-    });
-
-    ScrollReveal().reveal('.sub-title', {
-        origin: 'left',
-        distance: '500px',
-        rotate: { x: 0, y: 0, z: 0 },
-        reset: true,
-        duration: 1500
-    });
-
-    ScrollReveal().reveal('.distribution', {
-        origin: 'left',
-        distance: '500px',
-        rotate: { x: 0, y: 0, z: 0 },
-        reset: false,
-        duration: 1500
-    });
-
-
-    ScrollReveal().reveal('.covid-picture-sp', {
-        origin: 'left',
-        distance: '500px',
-        rotate: { x: 0, y: 0, z: 0 },
-        reset: false,
-        duration: 1500
-    });
-    ScrollReveal().reveal('.covid-picture-pc', {
-        origin: 'left',
-        distance: '500px',
-        rotate: { x: 0, y: 0, z: 0 },
-        reset: false,
-        duration: 1500
-    });
-
-    ScrollReveal().reveal('.banner-heading-red', {
-        delay: 0,
-        duration: 1500,
-        scale: 0.1,
-        reset: true,
-    });
-    ScrollReveal().reveal('.ani1', {
-        delay: 0,
-        duration: 1000,
-        scale: 0.1,
-        reset: false,
-    });
-    ScrollReveal().reveal('.ani2', {
-        delay: 0,
-        duration: 1500,
-        scale: 0.1,
-        reset: false,
-    });
-
-    ScrollReveal().reveal('.ani3', {
-        delay: 0,
-        duration: 2000,
-        scale: 0.1,
-        reset: false,
-    });
-    ScrollReveal().reveal('.ani4', {
-        delay: 0,
-        duration: 2500,
-        scale: 0.1,
-        reset: false,
-    });
-    ScrollReveal().reveal('.contact-here', {
-        origin: 'bottom',
-        distance: '100px',
-        rotate: { x: 0, y: 0, z: 0 },
-        reset: false,
-        duration: 1500
-    });
-    ScrollReveal().reveal('.fadeIn1', {
-        origin: 'bottom',
-        distance: '50px',
-        reset: false,
-        duration: 2000
-    });
-    ScrollReveal().reveal('.fadeIn2', {
-        origin: 'bottom',
-        distance: '50px',
-        reset: false,
-        duration: 2500
-    });
-    ScrollReveal().reveal('.fadeIn3', {
-        origin: 'bottom',
-        distance: '50px',
-        reset: false,
-        duration: 3000
-    });
-    ScrollReveal().reveal('.fadeIn4', {
-        origin: 'bottom',
-        distance: '50px',
-        reset: false,
-        duration: 3500
-    });
-
-    ScrollReveal().reveal('.heading-blue', {
-        origin: 'bottom',
-        distance: '50px',
-        reset: false,
-        duration: 2000
-    });
-
+        // underbarAnimation
         // ScrollReveal
-</script>
+        ScrollReveal().reveal('.new_banner_text1', {
+            origin: 'bottom',
+            distance: '400px',
+            delay: 0,
+            rotate: { x: 0, y: 0, z: 500 },
+            duration: 2000,
+            scale: 0.1,
+            reset: false,
+        });
+        ScrollReveal().reveal('.kakomi-tape4', {
+            delay: 0,
+            duration: 1000,
+            scale: 0.1,
+            reset: true
+        });
+        ScrollReveal().reveal('.title-tape4', {
+            origin: 'left',
+            distance: '500px',
+            rotate: { x: 0, y: 0, z: 500 },
+            reset: true,
+            delay: 800,
+        });
+    
+        ScrollReveal().reveal('.sub-title', {
+            origin: 'left',
+            distance: '500px',
+            rotate: { x: 0, y: 0, z: 0 },
+            reset: true,
+            duration: 1500
+        });
+    
+        ScrollReveal().reveal('.distribution', {
+            origin: 'left',
+            distance: '500px',
+            rotate: { x: 0, y: 0, z: 0 },
+            reset: false,
+            duration: 1500
+        });
+    
+    
+        ScrollReveal().reveal('.covid-picture-sp', {
+            origin: 'left',
+            distance: '500px',
+            rotate: { x: 0, y: 0, z: 0 },
+            reset: false,
+            duration: 1500
+        });
+        ScrollReveal().reveal('.covid-picture-pc', {
+            origin: 'left',
+            distance: '500px',
+            rotate: { x: 0, y: 0, z: 0 },
+            reset: false,
+            duration: 1500
+        });
+    
+        ScrollReveal().reveal('.banner-heading-red', {
+            delay: 0,
+            duration: 1500,
+            scale: 0.1,
+            reset: true,
+        });
+        ScrollReveal().reveal('.ani1', {
+            delay: 0,
+            duration: 1000,
+            scale: 0.1,
+            reset: false,
+        });
+        ScrollReveal().reveal('.ani2', {
+            delay: 0,
+            duration: 1500,
+            scale: 0.1,
+            reset: false,
+        });
+    
+        ScrollReveal().reveal('.ani3', {
+            delay: 0,
+            duration: 2000,
+            scale: 0.1,
+            reset: false,
+        });
+        ScrollReveal().reveal('.ani4', {
+            delay: 0,
+            duration: 2500,
+            scale: 0.1,
+            reset: false,
+        });
+        ScrollReveal().reveal('.contact-here', {
+            origin: 'bottom',
+            distance: '100px',
+            rotate: { x: 0, y: 0, z: 0 },
+            reset: false,
+            duration: 1500
+        });
+        ScrollReveal().reveal('.fadeIn1', {
+            origin: 'bottom',
+            distance: '50px',
+            reset: false,
+            duration: 2000
+        });
+        ScrollReveal().reveal('.fadeIn2', {
+            origin: 'bottom',
+            distance: '50px',
+            reset: false,
+            duration: 2500
+        });
+        ScrollReveal().reveal('.fadeIn3', {
+            origin: 'bottom',
+            distance: '50px',
+            reset: false,
+            duration: 3000
+        });
+        ScrollReveal().reveal('.fadeIn4', {
+            origin: 'bottom',
+            distance: '50px',
+            reset: false,
+            duration: 3500
+        });
+    
+        ScrollReveal().reveal('.heading-blue', {
+            origin: 'bottom',
+            distance: '50px',
+            reset: false,
+            duration: 2000
+        });
+    
+            // ScrollReveal
+    </script>
+</body>
+
 
 </html>
