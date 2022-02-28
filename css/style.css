@@ -135,7 +135,7 @@ hr {
 
 .banner-heading-red {
     color: crimson;
-    font-size: 4vw;
+    font-size: 4.3vw;
     font-weight: 900;
     padding-bottom:11vw;
     padding-top: 0px;
@@ -227,7 +227,7 @@ hr {
     text-align: left;
     padding-left: 20%;
     color: white;
-    font-size: clamp(2.8rem, 4.0rem, 4.0rem);
+    font-size: clamp(2.8rem, 3.5rem, 4.0rem);
     font-weight: 900;
 }
 
@@ -352,7 +352,7 @@ hr {
     font-size: 1.5em;
     color: #333;
     border-bottom: 2px solid rgb(192, 192, 192);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
 }
 
@@ -845,7 +845,7 @@ a:active {
     margin: 5vmax 0px;
     color: #dfdfdf;
     background: #3a0a95;
-    font-size: clamp(2.5rem, 2.6vw, 4.2rem);
+    font-size: clamp(2.1rem, 2.6vw, 4.2rem);
     line-height: 0.2;
     padding: 25px 10px;
     box-shadow: 1px 3px 7px 0px #666666;
@@ -854,15 +854,14 @@ a:active {
 
 }
 
-
-.heading-blue:after, sample2:before {
+/* .heading-blue:after, sample2:before {
     content: "";
     position: absolute;
     height: 0;
     width: 0;
     border: 5px solid transparent;
     border-top: 5px solid #333;
-}
+} */
 
 .heading-blue:after {
     left: 0;
@@ -881,7 +880,7 @@ a:active {
     font-weight: bold;
     text-align: left;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -1167,15 +1166,30 @@ a.btn-custom01:active:after {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
-
-
-    .target{
+    .case {
+        font-size: 18px;
+    }
+    .v-text{
+        font-size: 2.1rem;
+    }
+    .concept-text{
+        font-size: 18px;
+    }
+    .heading-red{
         font-size: 28px;
     }
-    .concept-text {
-        font-size: 2.9vw;
+    .flow{
+        padding-left:50px;
     }
-
+    .flow:before{
+        width: 160px;
+    } 
+    .underbar-Span{
+        font-size: 20px;
+    }
+    .target{
+        font-size: 20px;
+    }
     .row {
         flex-direction: column;
     }
@@ -1202,7 +1216,7 @@ a.btn-custom01:active:after {
 
     .title-tape4 {
         padding: 4px 20px;
-        font-size: 18px;
+        font-size: 14px;
 
     }
 
@@ -1247,8 +1261,13 @@ a.btn-custom01:active:after {
 
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
+
+    .p-text {
+        font-size: 14px;
+    }
     .kakomi-tape4{
         width: 100%;
+        padding: 0px;
     }
     .target {
         padding-left: 0%;
@@ -1263,8 +1282,7 @@ a.btn-custom01:active:after {
     }
 
     .first-head {
-        font-size: 4vw;
-
+        font-size: 24px;
     }
     .br-pc {
         display: none;
@@ -1372,7 +1390,9 @@ a.btn-custom01:active:after {
 
 /* 768px以上（タブレット・PC共通） */
 @media (min-width: 768px) {
-
+    .br-sp768 {
+        display: none;
+    }
 }
 
 /* 768x以上991px以下（タブレット用）*/
@@ -1384,6 +1404,7 @@ a.btn-custom01:active:after {
 
 /* 992px以上（PC用） */
 @media (min-width: 992px) {
+
     .method-sp {
         display: none;
     }
@@ -1449,6 +1470,9 @@ a.btn-custom01:active:after {
 }
 
 @media (max-width: 535px) {
+    .banner-heading-red{
+        font-size: 24px;
+    }
     .CustomerSatisfaction{
         display: none;
     }
@@ -1476,6 +1500,9 @@ a.btn-custom01:active:after {
 
 @media (min-width: 536px) {
     .CustomerSatisfaction-sp{
+        display: none;
+    }
+    .br-sp536 {
         display: none;
     }
 }
