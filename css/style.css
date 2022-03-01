@@ -271,10 +271,15 @@ main {
 
 .colum {
     margin-right: 30px;
-}
 
+}
+.colum-parent{
+    width: 10%;
+}
 .colum-detail {
     margin-top: 15px;
+    width: 90%;
+    padding-right: 15vw;
 }
 
 
@@ -321,7 +326,6 @@ main {
     color: #fff;
     font-size: calc(0.8em + 1vw);
     margin-top: 10px;
-    width: 100%;
 }
 
 
@@ -996,10 +1000,17 @@ a.btn-custom01:after {
     .row {
         flex-direction: column;
     }
-
+    .colum-parent{
+        width: 100%;
+    }
+    .colum-detail{
+        width: 100%;
+        padding-right: 0px;
+    }
     .v-text {
         -ms-writing-mode: tb-rl;
         writing-mode: horizontal-tb;
+        width: 100%;
     }
 
     .FCextending-red-text {
@@ -1323,5 +1334,8 @@ a.btn-custom01:after {
 
     .zoom {
         font-size: 34px;
+    }
+    .colum-detail {
+        padding-right: 10vw;
     }
 }
