@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 
-.wrapper {
-    overflow: hidden;
-}
-
 h2 {
     margin-bottom: 0px;
 }
@@ -26,18 +22,12 @@ main {
     background-color: rgb(241, 241, 241);
 }
 
-.FCimg {
-    margin: 50px 0px;
-}
 
 .covid-picture-pc {
     margin: 50px 0px;
     width: 75%;
 }
 
-.width100 {
-    width: 100%;
-}
 
 .underbar {
     margin-bottom: 4vmax;
@@ -110,22 +100,6 @@ main {
 
 
 
-/* 新バージョン */
-
-.slide_show {
-    width: 100%;
-    height: auto;
-
-}
-
-hr {
-    border: 1px solid transparent;
-}
-
-.top-heading {
-    color: red;
-    font-size: 37px;
-}
 
 
 .businessPlan-div {
@@ -137,7 +111,7 @@ hr {
     color: crimson;
     font-size: 4.3vw;
     font-weight: 900;
-    padding-bottom:11vw;
+    padding-bottom: 11vw;
     padding-top: 0px;
 }
 
@@ -227,61 +201,33 @@ hr {
     font-weight: 900;
 }
 
-/* 店舗に空きスペースがある方 */
-.box1 {
-    animation-duration: 1.0s;
-    width: 33%;
-}
-
-/* 新規事業をお探しの方 */
-.box2 {
-    animation-duration: 1.5s;
-    width: 33%;
-
-}
-
-/* 業種転換を検討されている方 */
-.box3 {
-    animation-duration: 2.0s;
-    width: 33%;
-}
-
-/* フットネス事業を立ち上げてみませんか?未経験でも始められるフランチャイズバナー */
-.Quiztion {
-    display: flex;
-    margin: 30px 0px;
-}
-
-.top-banner2 {
-    width: 100%;
-    text-align: center;
-}
-
-#toppng {
-    margin: 50px 0px;
-}
 
 /* HF24の強み */
 
 .strength {
-    background-image: url("../image/franchise/strengths3-bg.jpg");
+    background-image: url("../image/franchise/topbanner.jpg");
     background-size: cover;
     background-position: top;
+    padding-top: 2vw;
+    padding-bottom: 20vw;
 }
 
-
+.underbanner {
+    width: 100%;
+}
 
 .CustomerSatisfaction {
     color: #fff;
-    font-size: 4.2vw;
-    margin-bottom: 5vmax;
-    float: left;
+    font-size: 5.2vw;
     color: #FF7C00;
     background: -webkit-linear-gradient(top, #FFB76B 0%, #FFA73D 50%, #FF7C00 51%, #FF7F04 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
+    vertical-align: middle;
+    /* 上下中央に寄せる */
 }
+
 .CustomerSatisfaction-sp {
     color: rgb(233, 29, 29);
     font-size: 20px;
@@ -290,53 +236,19 @@ hr {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-left: 10px;
-}
-.achievement-div {
-    margin-top: 20vmax;
-    color: rgba(227, 179, 29);
-    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+
 }
 
-.achievement-text {
-    padding-left: 5vw;
+.CustomerSatisfaction-div {
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 .ranking-text-pc {
-    color: #fff;
+    color: rgb(5, 5, 5);
 }
 
-.ranking-site-link {
-    color: #fff;
-}
-
-.ranking-site-link:hover {
-    color: rgb(189, 189, 189);
-}
-
-.achievement {
-    color: rgb(0, 0, 0);
-    text-align: left;
-    font-size: clamp(1.6rem, 2.5vw, 4.0rem);
-    font-weight: bold;
-}
-
-.Silver {
-    color: silver;
-    font-size: clamp(1.6rem, 3.0vw, 5.0rem);
-    text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
-        -3px 3px 3px #000, 3px -3px 3px #000,
-        3px 0px 3px #000, -3px -0px 3px #000,
-        0px 3px 3px #000, 0px -3px 3px #000;
-}
-
-.Gold {
-    color: gold;
-    font-size: clamp(1.6rem, 3.0vw, 5.0rem);
-    text-shadow: 3px 3px 3px #000, -3px -3px 3px #000,
-        -3px 3px 3px #000, 3px -3px 3px #000,
-        3px 0px 3px #000, -3px -0px 3px #000,
-        0px 3px 3px #000, 0px -3px 3px #000;
-}
 
 /* HF24の強み */
 .contact-here {
@@ -352,21 +264,20 @@ hr {
     font-weight: 900;
 }
 
+.row {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 .colum {
     margin-right: 30px;
-
 }
 
 .colum-detail {
     margin-top: 15px;
 }
 
-.heading-red-underbar {
-    color: red;
-    margin-bottom: 40px;
-    border-bottom: solid 3px black;
-    text-align: center;
-}
+
 
 .heading-red {
     color: rgb(199, 0, 0);
@@ -376,12 +287,12 @@ hr {
     font-weight: 900;
 }
 
-.heading-2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
+
 
 /* 基本戦略・コンセプト */
+.ul-concept{
+    display: inline-block;
+}
 .concept {
     padding-left: 15%;
     margin-top: 60px;
@@ -390,11 +301,14 @@ hr {
 
 .concept-text {
     font-size: calc(0.8em + 1vw);
-    /* float: left; */
+    text-align: left;
     background: linear-gradient(#ffffff, #e6e6e6);
-    padding: left 80%;
     border-radius: 5px;
-    padding: 2px;
+    padding: 3px;
+
+}
+.concept-text span{
+    color: red;
 }
 
 .v-text {
@@ -407,21 +321,9 @@ hr {
     color: #fff;
     font-size: calc(0.8em + 1vw);
     margin-top: 10px;
-}
-
-.h-text {
-    font-size: 1.5em;
-}
-
-.row {
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.col {
     width: 100%;
-    height: 100px;
 }
+
 
 /* 基本戦略・コンセプト */
 
@@ -504,12 +406,6 @@ hr {
 
 }
 
-.text-bg {
-    background: rgba(255, 255, 255, 0.8);
-    margin-bottom: 30px;
-    font-size: 120%;
-}
-
 
 .method-sp {
     padding: 0.3em 0;
@@ -532,14 +428,6 @@ hr {
     text-align: left;
 }
 
-.tap {
-    text-align: center;
-}
-
-.time {
-    text-align: center;
-
-}
 
 #contactx {
     border-top: solid 3px #dfdfdf;
@@ -554,20 +442,6 @@ a.more-btn {
     margin-bottom: 0px;
 }
 
-/* お問合せdiv */
-
-
-/* 資料請求・お問い合わせボタン */
-
-
-
-.li-text {
-    color: red;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-left: 1.4em;
-    text-indent: -1.4em;
-}
 
 
 /* FCオープンまでのながれ */
@@ -628,10 +502,10 @@ a.more-btn {
     background-color: rgb(56, 56, 77);
 
 }
-
-.flow-h3 {
-    margin: 30px 0px;
+.text-bg{
+    background :rgba(255, 255, 255, 0.8);
 }
+
 
 /* FCオープンまでのながれ */
 
@@ -761,32 +635,7 @@ a:active {
 }
 
 
-/* スライドショー */
-/* 秘訣 */
-.method {
-    background-color: rgb(66, 66, 138);
-    color: cornsilk;
-    font-size: 1.5em;
-    display: flex;
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-}
 
-.method-h2 {
-    margin: 20px 0px;
-}
-
-.method-title {
-    margin-left: 8px;
-    white-space: nowrap;
-}
-
-.method-text {
-    font-size: 1vw;
-    margin: auto;
-}
 
 
 /* 秘訣 */
@@ -803,33 +652,35 @@ a:active {
     font-size: 1.4em;
     color: #131b4b;
 }
+
 .ttlTxtBG {
     padding-top: 2vw;
-    position:relative;
-    background:#e7e6e6;
-    color:#2c3e50;
-    font-size:2.6rem;
-    text-align:center;
-    z-index:100;
-    overflow:hidden;
+    position: relative;
+    background: #e7e6e6;
+    color: #2c3e50;
+    font-size: 2.6rem;
+    text-align: center;
+    z-index: 100;
+    overflow: hidden;
 }
+
 .ttlTxtBG:before {
     padding-top: 2vw;
-    position:absolute;
-    top:-15px;
-    left:2px;
-    content:"POINT";
-    display:block;
-    color:rgba(000,000,000,0.05);
-    font-family: 'Ubuntu Condensed' sans-serif;
-    font-size:10.0rem;
-    font-weight:bold;
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    content: "POINT";
+    display: block;
+    color: rgba(000, 000, 000, 0.05);
+    font-family: 'Ubuntu Condensed'sans-serif;
+    font-size: 10.0rem;
+    font-weight: bold;
     letter-spacing: 0.1rem;
-    line-height:1;
-    -webkit-transform:rotate(-13deg);
-    -moz-transform:rotate(-13deg);
-    transform:rotate(-13deg);
-    z-index:-1;
+    line-height: 1;
+    -webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    transform: rotate(-13deg);
+    z-index: -1;
 }
 
 /* 妥協 */
@@ -839,7 +690,7 @@ a:active {
     margin: 5vmax 0px;
     color: #dfdfdf;
     background: #3a0a95;
-    font-size: clamp(2.1rem, 2.6vw, 4.2rem);
+    font-size: clamp(1.8rem, 2.6vw, 4.2rem);
     line-height: 0.2;
     padding: 25px 10px;
     box-shadow: 1px 3px 7px 0px #666666;
@@ -969,18 +820,6 @@ a:active {
 }
 
 /* お問合せフォーム */
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact-div {
-    width: calc(100% / 2);
-    text-align: center;
-}
 
 .text-contact {
     margin: 30px 0px;
@@ -1085,11 +924,7 @@ a.btn-custom01:after {
     background: #54f4fa;
 }
 
-.fa-position-left {
-    position: absolute;
-    top: calc(50% - 0.5em);
-    left: 1rem;
-}
+
 
 .fa-position-right {
     position: absolute;
@@ -1097,40 +932,9 @@ a.btn-custom01:after {
     right: 1rem;
 }
 
-a.btn-custom01:hover {
-    -webkit-transform: translate(0, 0.25rem);
-    transform: translate(0, 0.25rem);
 
-}
 
-a.btn-custom01:hover:before {
-    -webkit-transform: translate3d(0, 0.5rem, -1rem);
-    transform: translate3d(0, 0.5rem, -1rem);
-    -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
-}
 
-a.btn-custom01:hover:after {
-    content: "\f2b6";
-}
-
-a.btn-custom01:active {
-    -webkit-transform: translate(0rem, 0.75rem);
-    transform: translate(0rem, 0.75rem);
-}
-
-a.btn-custom01:active:before {
-    -webkit-transform: translate3d(0, 0, -1rem);
-    transform: translate3d(0, 0, -1rem);
-    -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
-}
-
-a.btn-custom01:active:after {
-    content: "\f2b6";
-}
-
-/* 新ボタン0218 */
 
 /* お問合せフォーム */
 
@@ -1151,30 +955,44 @@ a.btn-custom01:active:after {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
+    .p-text {
+        font-size: 14px;
+    }
     .case {
         font-size: 18px;
     }
-    .v-text{
+
+    .v-text {
         font-size: 2.1rem;
     }
-    .concept-text{
+
+    .concept-text {
+        text-align: initial;
+        text-align: center;
         font-size: 18px;
+        width: 100%;
     }
-    .heading-red{
+
+    .heading-red {
         font-size: 28px;
     }
-    .flow{
-        padding-left:50px;
+
+    .flow {
+        padding-left: 50px;
     }
-    .flow:before{
+
+    .flow:before {
         width: 160px;
-    } 
-    .underbar-Span{
+    }
+
+    .underbar-Span {
         font-size: 20px;
     }
-    .target{
+
+    .target {
         font-size: 20px;
     }
+
     .row {
         flex-direction: column;
     }
@@ -1239,6 +1057,7 @@ a.btn-custom01:active:after {
     .colum {
         margin-right: 10px;
     }
+
     .achievement-div {
         margin-top: 2vmax;
     }
@@ -1247,13 +1066,11 @@ a.btn-custom01:active:after {
 /* 991px以下（スマホ用）*/
 @media (max-width: 991px) {
 
-    .p-text {
-        font-size: 14px;
-    }
-    .kakomi-tape4{
+    .kakomi-tape4 {
         width: 100%;
         padding: 0px;
     }
+
     .target {
         padding-left: 0%;
     }
@@ -1269,6 +1086,7 @@ a.btn-custom01:active:after {
     .first-head {
         font-size: 24px;
     }
+
     .br-pc {
         display: none;
     }
@@ -1455,12 +1273,14 @@ a.btn-custom01:active:after {
 }
 
 @media (max-width: 535px) {
-    .banner-heading-red{
+    .banner-heading-red {
         font-size: 24px;
     }
-    .CustomerSatisfaction{
+
+    .CustomerSatisfaction {
         display: none;
     }
+
     .achievement-div {
         margin-top: 13vmax;
     }
@@ -1480,13 +1300,17 @@ a.btn-custom01:active:after {
     .kakomi-tape4 {
         width: 95%;
     }
+    .concept-text{
+        font-size: 3vw;
+    }
 }
 
 
 @media (min-width: 536px) {
-    .CustomerSatisfaction-sp{
+    .CustomerSatisfaction-sp {
         display: none;
     }
+
     .br-sp536 {
         display: none;
     }
