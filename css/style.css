@@ -39,7 +39,8 @@ main {
 
 .new_top_banner {
     background-image: url("../image/franchise/newFC_thubnail.jpg");
-    background-size: auto;
+    /* background-size: auto; */
+    background-size: cover;
     padding-top: 30px;
 }
 
@@ -518,6 +519,7 @@ a.more-btn {
     /*横幅94%で左右に余白を持たせて中央寄せ*/
     width: 94%;
     margin: 0 auto;
+    margin-top: 5vw;
 }
 
 .slider img {

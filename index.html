@@ -19,11 +19,9 @@
 
 <body>
 
-    <header>
-        共通ヘッダー
-    </header>
-    <div class="nav-wrap">共通nav-wrap</div>
-    <div id="page-index">共通page-index</div>
+    <header></header>
+    <!-- <div class="nav-wrap">共通nav-wrap</div>
+    <div id="page-index">共通page-index</div> -->
     <main>
         <div class="new_top_banner">
             <div class="top_banner_div">
@@ -82,7 +80,7 @@
 
         <!-- お問合せはこちら -->
         <h2 class="contact-here fadeUpTrigger">\&nbsp;&nbsp;お問い合せはこちら&nbsp;&nbsp;/</h2>
-        <a class="btn btn-custom01" href="https://google.com">
+        <a class="btn btn-custom01" href="/Franchise/Entry/">
             <span class="btn-custom01-front">FC資料請求/お問い合わせフォーム</span>
             <i class="fas fa-angle-right fa-position-right"></i>
         </a>
@@ -98,7 +96,8 @@
                 </div>
                 <div class="colum-detail">
                     <ul class="ul-concept">
-                        <li class="concept-text"><span>ドミナント出店</span><br class="br-sp768" />=相互利用店舗数確保による商圏シェアの最大化と寡占化</li>
+                        <li class="concept-text"><span>ドミナント出店</span><br class="br-sp768" />=相互利用店舗数確保による商圏シェアの最大化と寡占化
+                        </li>
                         <li class="concept-text"><span>ローコスト出店/ローコスト運営</span><br class="br-sp768" />=利益率の高い店舗経営</li>
                         <li class="concept-text"><span>全国展開</span><br class="br-sp768" />=直営FC合計60店舗展開による高い知名度を武器に</li>
                         <li class="concept-text"><span>FC運営指導</span><br class="br-sp768" />=SVによる運営指導で会員へのサポート強化</li>
@@ -107,15 +106,18 @@
             </div>
             <div class="row">
                 <div class="colum-parent">
-                <div class="colum">
-                    <h3 class="v-text">店舗コンセプト</h3>
-                </div>
+                    <div class="colum">
+                        <h3 class="v-text">店舗コンセプト</h3>
+                    </div>
                 </div>
                 <div class="colum-detail">
                     <ul class="ul-concept">
-                        <li class="concept-text"><span>いつでも</span><br class="br-sp768" />=年中無休/24h営業/天候に左右されない/初心者から上級者まで</li>
-                        <li class="concept-text"><span>気軽に</span><br class="br-sp768" />=月々4980円(税別)からのリーズナブルな月会費/豊富なコンテンツ</li>
-                        <li class="concept-text"><span>安全に</span><br class="br-sp768" />=静脈認証システム/24時間防犯カメラ録画/ALSOKとの警備契約</li>
+                        <li class="concept-text"><span>いつでも</span><br
+                                class="br-sp768" />=年中無休/24h営業/天候に左右されない/初心者から上級者まで</li>
+                        <li class="concept-text"><span>気軽に</span><br
+                                class="br-sp768" />=月々4980円(税別)からのリーズナブルな月会費/豊富なコンテンツ</li>
+                        <li class="concept-text"><span>安全に</span><br
+                                class="br-sp768" />=静脈認証システム/24時間防犯カメラ録画/ALSOKとの警備契約</li>
                         <li class="concept-text"><span>安心を</span><br class="br-sp768" />=新型コロナウイルス対策換気/消毒/清掃/ルール/個室</li>
                     </ul>
                 </div>
@@ -387,6 +389,19 @@
         </section>
         <!-- contact -->
     </main>
+    <footer></footer>
+    <script>
+
+        $(function () {
+            $("header").load("/include/common/header.html", function () {
+                $.getScript("/js/drawer.js", function () { });
+            });
+
+            $('footer').load('/include/common/footer.html', function () {
+                $.getScript("/js/pagetop.js", function () { });
+            });
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -405,10 +420,10 @@
             speed: 1000,
             grabCursor: true
         });
-    
+
         // underbarAnimation
         $(window).on('scroll', function () {
-    
+
             $(".JS_ScrollAnimationItem").each(function () {
                 var position = $(this).offset().top;
                 var scroll = $(window).scrollTop();
@@ -417,9 +432,9 @@
                     $(this).addClass('isActive');
                 }
             });
-    
+
         }); $(window).on('scroll', function () {
-    
+
             $(".JS_ScrollAnimationItem").each(function () {
                 var position = $(this).offset().top;
                 var scroll = $(window).scrollTop();
@@ -428,7 +443,7 @@
                     $(this).addClass('isActive');
                 }
             });
-    
+
         });
         // underbarAnimation
         // ScrollReveal
@@ -445,16 +460,16 @@
             delay: 0,
             duration: 1000,
             scale: 0.1,
-            reset: true
+            reset: false
         });
         ScrollReveal().reveal('.title-tape4', {
             origin: 'left',
             distance: '500px',
             rotate: { x: 0, y: 0, z: 500 },
-            reset: true,
+            reset: false,
             delay: 800,
         });
-    
+
         ScrollReveal().reveal('.sub-title', {
             origin: 'left',
             distance: '500px',
@@ -462,7 +477,7 @@
             reset: true,
             duration: 1500
         });
-    
+
         ScrollReveal().reveal('.distribution', {
             origin: 'left',
             distance: '500px',
@@ -470,8 +485,8 @@
             reset: false,
             duration: 1500
         });
-    
-    
+
+
         ScrollReveal().reveal('.covid-picture-sp', {
             origin: 'left',
             distance: '500px',
@@ -486,7 +501,7 @@
             reset: false,
             duration: 1500
         });
-    
+
         ScrollReveal().reveal('.banner-heading-red', {
             delay: 0,
             duration: 1500,
@@ -505,7 +520,7 @@
             scale: 0.1,
             reset: false,
         });
-    
+
         ScrollReveal().reveal('.ani3', {
             delay: 0,
             duration: 2000,
@@ -549,14 +564,14 @@
             reset: false,
             duration: 3500
         });
-    
+
         ScrollReveal().reveal('.heading-blue', {
             origin: 'bottom',
             distance: '50px',
             reset: false,
             duration: 2000
         });
-    
+
             // ScrollReveal
     </script>
 </body>

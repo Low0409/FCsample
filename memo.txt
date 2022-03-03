@@ -1,7 +1,33 @@
-スマホ時に小さいところ
 
-徹底的に顧客満足度を目指しています。
-✅料金満足度スタッフ対応とか順位部分以外
-✅流れ
-✅問合せ
-✅見出し少なく
+
+
+css
+
+.new_top_banner {
+    background-image: url("../image/franchise/newFC_thubnail.jpg");
+    /* background-size: auto; */
+    background-size: cover;
+    padding-top: 30px;　←←←←追加
+}
+
+
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 5vw;　←←←←追加
+}
+
+
+
+
+html
+
+ScrollReveal().reveal()の'.kakomi-tape4'と'.title-tape4'のresetをfalse
+
+
+
+
+/Franchise/Entry/
+
+
